@@ -1,0 +1,2344 @@
+[
+    {
+      "recommended_journey": {
+        "id": 3000001,
+        "title": "Demenz als Herausforderung",
+        "description": "Journey designed for the first user profile in the test.",
+        "industry": "Human Health and Social Work",
+        "lang": "de",
+        "company": "",
+        "country": "Germany",
+        "city": "",
+        "created_at": "2022-11-25 15:44:22.704505+00:00",
+        "updated_at": "2022-11-30 14:03:23.763970+00:00",
+        "courses": [
+          {
+            "expert_explanation": "",
+            "addable": "",
+            "embedding_model": "",
+            "learnable": "",
+            "description": "",
+            "language": "",
+            "ID": 999995,
+            "expert_keywords": "",
+            "title": "Grundlagen Demenz",
+            "automatic_explanation": "",
+            "assessmentable": "",
+            "topics": [
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "expert_explanation": "",
+                "description": "",
+                "language": "",
+                "ID": 3000005,
+                "title": "Grundlegende Informationen zur Erkrankung Demenz",
+                "expert_keywords": "",
+                "automatic_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "description": "Was bedeutet das Aufdecken der gefälschten Studie für die Perspektive auf Demenz? Wie verändert das Wissen um die Fehlerhafte Studie die Perspektive und folglich auch den Umgang mit Demenz? Wie kommt es, dass viele Jahre der Forschung auf einer falschen Studie beruhen können - wer hat daran ein Interesse? Welche alternativen Erklärungsmodelle oder Einflussfaktoren kommen nun stärker in Betracht, wenn die Plaque Hypothese wiederlegt ist?",
+                    "ID": 3000105,
+                    "title": "Der Zusammenhang von Alzheimer-Demenz und Plaques im Gehirn",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000111,
+                        "expert_keywords": "",
+                        "title": "Gefälschte Studien",
+                        "automatic_explanation": "",
+                        "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Wie lässt sich erklären, dass einige Nonnen trotz Plaques im Gehirn keine Anzeichen von Demenz zeigen? Was unterscheIDet das Leben der Nonnen von dem des überwiegenden Teil der Bevölkerung? Kann Demenz und deren Verlauf genetisch determiniert sein, wenn einige Nonnen diese offenbar zum großen Teil nicht entwickeln, obwohl Plaques im Gehirn vorhanden sind? Wie verändert dies die Sicht und den Umgang mit Demenz Erkrankungen? Möglicherweise lassen sich aus den Erkenntnissen Schutzfaktoren vor der Entwicklung von Symptomen demenzieller Erkrankungen ableiten?",
+                    "ID": 3000106,
+                    "title": "Der Zusammenhang von Alzheimer-Demenz und Plaques im Gehirn - ein Interview mit DavID Snowdon zur Nonnenstudie",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000115,
+                        "expert_keywords": "",
+                        "title": "Interview mit Snowdon",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=SkY8BfX75tU"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Wie lässt sich erklären, dass die Nonnen keine Anzeichen von Demenz aufzeigen? Was unterscheIDet das Leben der Nonnen von dem des überwiegenden Teil der Gesellschaft? Kann Demenz und deren Verlauf genetisch determiniert sein, wenn Nonnen diese offenbar zum großen Teil nicht entwickeln? Wie verändert dies die Sicht und den Umgang mit Demenz Erkrankungen? Möglicherweise lassen sich aus den Erkenntnissen Schutzfaktoren vor der Entwicklung von Symptomen demenzieller Erkrankungen ableiten?",
+                    "ID": 3000107,
+                    "title": "Die Nonnenstudie – sozialer Schutz vor Alzheimer-Demenz",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000117,
+                        "expert_keywords": "",
+                        "title": "Nonnenstudie",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=lKrE03veHAU"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Was bedeutet das Aufdecken der gefälschten Studie für die Perspektive auf Demenz? Wie verändert das Wissen um die fehlerhafte Studie die Perspektive und folglich auch den Umgang mit Demenz? Wie kommt es, dass viele Jahre der Forschung auf einer falschen Studie beruhen können - Wer hat daran ein Interesse? Welche alternativen Erklärungsmodelle oder Einflussfaktoren kommen nun stärker in Betracht, wenn die Plaque Hypothese wiederlegt ist?",
+                    "ID": 3000104,
+                    "title": "Der Zusammenhang von Alzheimer-Demenz und Plaques im Gehirn – ein Artikel aus SPIEGEL Wissenschaft",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000107,
+                        "expert_keywords": "",
+                        "title": "Gefälschte Studien",
+                        "automatic_explanation": "",
+                        "url": "https://www.spiegel.de/wissenschaft/medizin/wissenschaftsskandal-wegen-mutmasslichem-betrug-wie-ein-neurowissenschaftler-alzheimer-studien-faelschte-a-725a8aca-c270-4bf2-86b5-1708d0021ef9"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Gibt es 'die' Demenz? Ist der Verlauf einer Demenz determiniert? Wie lässt sich die Entwicklung einer Demenz möglicherweise beeinflussen? Entsprechen die dargestellten Inhalte dem aktuellen Stand der Wissenschaft? Die Plaque Hypothese gilt als überholt, warum ist diese dennoch so stark verbreitet? Wenn die Plaque Hypothese überholt ist, welche weiteren, ggf. nicht genetischen Einflussfaktoren sind möglich? Welche Folgen hat der Gedächtnisverlust für die Betroffenen? Wie wirkt sich das Wahrnehmen der eigenen Krankheit auf die Betroffenen aus?",
+                    "ID": 3000101,
+                    "title": "Demenz – eine kurze Erklärung verschiedener Krankheitsbilder",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "description": "Gibt es 'die' Demenz? Ist der Verlauf einer Demenz determiniert? Wie lässt sich die Entwicklung einer Demenz möglicherweise beeinflussen? Entsprechen die dargestellten Inhalte dem aktuellen Stand der Wissenschaft? Die Plaque Hypothese gilt als überholt, warum ist diese dennoch so stark verbreitet? Wenn die Plaque Hypothese überholt ist, welche weiteren, ggf. nicht genetischen Einflussfaktoren sind möglich? Welche Folgen hat der Gedächtnisverlust für die Betroffenen? Wie wirkt sich das Wahrnehmen der eigenen Krankheit auf die Betroffenen aus?",
+                        "ID": 3000201,
+                        "expert_keywords": "",
+                        "title": "Demenz – eine kurze Erklärung verschiedener Krankheitsbilder",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=ohqrPRdrwGw"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Was bedeutet das aufdecken der gefälschten Studie für die Perspektive auf Demenz? Wie verändert das Wissen um die Fehlerhafte Studie die Perspektive und folglich auch den Umgang mit Demenz? Wie kommt es dass viele Jahre der Forschung auf einer falschen Studie beruhen  können - wer hat daran ein Interesse? Welche alternativen Erklärungsmodelle oder Einflussfaktoren kommen nun stärker in Betracht, wenn die Plaque Hypothese wiederlegt ist?",
+                    "ID": 3000103,
+                    "title": "Der Zusammenhang von Alzheimer-Demenz und Plaques im Gehirn - ein Radiobeitrag",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000109,
+                        "expert_keywords": "",
+                        "title": "Gefälschte Studien",
+                        "automatic_explanation": "",
+                        "url": "https://www.deutschlandfunk.de/alzheimer-forschung-skandal-100.html"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Wozu bedarf es eines solchen Klassifikationssystems? Welcher Fachdisziplin ist ein solches System zuzuordnen? Bietet das System eine Ursachenerklärung? Lassen sich durch ein solches System oder die Diagnose ein Umgang mit Betroffenen ableiten? Welchen Nutzten hat die Anwendung des Systems im Pflegealltag?",
+                    "ID": 3000102,
+                    "title": "Demenz – die internationale Klassifikation nach ICD",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "description": "Wozu bedarf es eines solchen Klassifikationssystems? Welcher Fachdisziplin ist ein solches System zuzuordnen? Bietet das System eine Ursachenerklärung? Lassen sich durch ein solches System oder die Diagnose ein Umgang mit Betroffenen ableiten? Welchen Nutzten hat die Anwendung des Systems im Pflegealltag?",
+                        "ID": 3000202,
+                        "expert_keywords": "",
+                        "title": "Demenz – die internationale Klassifikation nach ICD",
+                        "automatic_explanation": "",
+                        "url": "https://www.bfarm.de/DE/Kodiersysteme/Klassifikationen/ICD/ICD-11/uebersetzung/_node.html;jsessionid=7BA10A1414CC75B286F91CA66F444521.intranet662"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "expert_explanation": "",
+                "description": "",
+                "language": "",
+                "ID": 3000007,
+                "title": "Demenz als Herausforderung in der häuslichen Pflege",
+                "expert_keywords": "",
+                "automatic_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "description": "Welche Besonderheiten ergeben sich unter dem Verhältnis von Nähe und Distanz? Kann ein Familienmitglied eine professionelle Pflegekraft ersetzen – welche besonderen Herausforderungen ergeben sich aus der Pflege eines eigenen Familienmitgliedes? Das Wissen  um die richtige Anwendung von Pflegemaßnahmen z.B. zur Körperpflege sind ein Faktor, doch weshalb kann eine professionelle Ausbildung der Pflege darüber hinaus hilfreich sein im Umgang mit demenziell Erkrankten? UnterscheIDet sich die Fixierung in einer Einrichtung der außerklinischen Pflege von Maßnahmen wie dem Türabschließen oder ähnlichem, durchgeführt von der eigenen Tochter? In welchem Konflikt steht die permanente Überwachung zu den Grundrechten der Betroffenen? Welche Autonomie, Entwicklungs- und Entfaltungsspielräume eröffnet die Pflege eines demenziell Erkrankten im privaten Umfeld im UnterscheID zur Pflege in einer Pflegeeinrichtung?",
+                    "ID": 3000114,
+                    "title": "Die dementen eigenen Eltern pflegen – eine besondere Herausforderung",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "description": "Welche Besonderheiten ergeben sich unter dem Verhältnis von Nähe und Distanz? Kann ein Familienmitglied eine professionelle Pflegekraft ersetzen – welche besonderen Herausforderungen ergeben sich aus der Pflege eines eigenen Familienmitgliedes? Das Wissen um die richtige Anwendung von Pflegemaßnahmen z.B. zur Körperpflege sind ein Faktor, doch weshalb kann eine professionelle Ausbildung der Pflege darüber hinaus hilfreich sein im Umgang mit demenziell Erkrankten? Unterscheidet sich die Fixierung in einer Einrichtung der außerklinischen Pflege von Maßnahmen wie dem Türabschließen oder ähnlichem, durchgeführt von der eigenen Tochter? In welchem Konflikt steht die permanente Überwachung zu den Grundrechten der Betroffenen? Welche Autonomie, Entwicklungs- und Entfaltungsspielräume eröffnet die Pflege eines demenziell Erkrankten im privaten Umfeld im Unterscheid zur Pflege in einer Pflegeeinrichtung?",
+                        "ID": 3000214,
+                        "expert_keywords": "",
+                        "title": "Die dementen eigenen Eltern pflegen – eine besondere Herausforderung",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=gBGy_78-40E"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "",
+                    "ID": 3000116,
+                    "title": "Familienleben mit demenziell erkrankten Menschen",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000157,
+                        "expert_keywords": "",
+                        "title": "Familienleben mit Demenz, 37 Grad",
+                        "automatic_explanation": "",
+                        "url": "https://www.zdf.de/dokumentation/37-grad/37-wie-heisst-du-100.html"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Welche Besonderheiten ergeben sich unter dem Verhältnis von Nähe und Distanz? Kann ein Familienmitglied eine professionelle Pflegekraft ersetzen – welche besonderen Herausforderungen ergeben sich aus der Pflege eines eigenen Familienmitgliedes? Das Wissen um die richtige Anwendung von Pflegemaßnahmen z.B. zur Körperpflege sind ein Faktor, doch weshalb kann eine professionelle Ausbildung der Pflege darüber hinaus hilfreich sein, im Umgang mit demenziell Erkrankten? Welche Autonomie, Entwicklungs- und Entfaltungsspielräume eröffnet die Pflege eines demenziell Erkrankten im privaten Umfeld im UnterscheID zur Pflege in einer Pflegeeinrichtung?",
+                    "ID": 3000115,
+                    "title": "Häusliche Pflege Angehöriger als Überforderung",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "description": "Welche Besonderheiten ergeben sich unter dem Verhältnis von Nähe und Distanz? Kann ein Familienmitglied eine professionelle Pflegekraft ersetzen – welche besonderen Herausforderungen ergeben sich aus der Pflege eines eigenen Familienmitgliedes? Das Wissen um die richtige Anwendung von Pflegemaßnahmen z.B. zur Körperpflege sind ein Faktor, doch weshalb kann eine professionelle Ausbildung der Pflege darüber hinaus hilfreich sein, im Umgang mit demenziell Erkrankten? Welche Autonomie, Entwicklungs- und Entfaltungsspielräume eröffnet die Pflege eines demenziell Erkrankten im privaten Umfeld im Unterscheid zur Pflege in einer Pflegeeinrichtung?",
+                        "ID": 3000215,
+                        "expert_keywords": "",
+                        "title": "Häusliche Pflege Angehöriger als Überforderung",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=VDporzQTIyQ"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Welche Besonderheiten Ergeben sich im Verhältnis von Nähe und Distanz? Kann ein Mitbewohner professionelle Pflege unter allen Umständen ersetzen? Worin unterscheIDet sich ein Mittbewohner von professioneller Pflege? Bleiben möglicherweise mehr Autonomie, Entwicklungs- und Entfaltungsräume erhalten als in anderen Settings institutioneller Pflege?",
+                    "ID": 3000117,
+                    "title": "Agnes‘ WG mit jungem Mann",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "description": "Welche Besonderheiten Ergeben sich im Verhältnis von Nähe und Distanz? Kann ein Mitbewohner professionelle Pflege unter allen Umständen ersetzen? Worin unterscheidet sich ein Mittbewohner von professioneller Pflege? Bleiben möglicherweise mehr Autonomie, Entwicklungs- und Entfaltungsräume erhalten als in anderen Settings institutioneller Pflege?",
+                        "ID": 3000217,
+                        "title": "Agnes‘ WG mit jungem Mann",
+                        "expert_keywords": "",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=tshqjNvu5Z4"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Wie lässt sich professionell Begründen, dass der Betroffene nicht deutlich und nur verpixelt gezeigt wird? Wie verändern die Symptome das Zusammenleben? Welche Besonderheiten ergeben sich unter dem Verhältnis von Nähe und Distanz? Kann ein Familienmitglied eine professionelle Pflegekraft ersetzen – welche besonderen Herausforderungen ergeben sich aus der Pflege eines eigenen Familienmitgliedes?",
+                    "ID": 3000113,
+                    "title": "Alzheimer-Demenz mit frühem Beginn – den Ehemann pflegen",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "description": "Wie lässt sich professionell Begründen, dass der Betroffene nicht deutlich und nur verpixelt gezeigt wird? Wie verändern die Symptome das Zusammenleben? Welche Besonderheiten ergeben sich unter dem Verhältnis von Nähe und Distanz? Kann ein Familienmitglied eine professionelle Pflegekraft ersetzen – welche besonderen Herausforderungen ergeben sich aus der Pflege eines eigenen Familienmitgliedes?",
+                        "ID": 3000213,
+                        "expert_keywords": "",
+                        "title": "Alzheimer-Demenz mit frühem Beginn – den Ehemann pflegen",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=_QZlPj5WFNY"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "expert_explanation": "",
+            "addable": "",
+            "embedding_model": "",
+            "learnable": "",
+            "description": "Autonomieerhalt / Autonomieförderung /  Evaluation der Themen Selbst- und Fremdbestimmung im Kontext psychischer Erkrankungen / instutionelle Einflussnahme auf das Ausleben von Autonomiebestrebungen / Reflexion der Angemessenheit / (unerkannter) Machtmissbrauch bei evidentem Machtgefälle / Entwicklung von Urteils-, Handlungs-, Kommunikations- und Gestaltungsfähigkeit",
+            "language": "",
+            "ID": 1000001,
+            "expert_keywords": "",
+            "title": "Komplex Autonomie",
+            "automatic_explanation": "",
+            "assessmentable": "",
+            "topics": [
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Inwiefern kann Autonomie im Kontext Demenz gewährleistet werden? /  Inwiefern kann Autonomie im Kontext Demenz beschränkt werden? / Autonomie vs. Überwachung",
+                "language": "",
+                "title": "Autonomie - Zwang",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000002,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000003,
+                    "title": "Fixierung oder nicht?",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000004,
+                        "expert_keywords": "",
+                        "title": "Fixierung oder nicht?",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=U9nisZSOhqc"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000008,
+                    "expert_keywords": "",
+                    "title": "Freiheitsentziehende Maßnahmen in der Pflege",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000017,
+                        "expert_keywords": "",
+                        "title": "Freiheitsentziehende Maßnahmen in der Pflege",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=WJp6F24feQs"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000152,
+                    "title": "Digitalisierung in der Altenhilfe",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000153,
+                        "expert_keywords": "",
+                        "title": "Digitalisierung in der Altenhilfe",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=ZiUxr6R41xM#"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000154,
+                    "expert_keywords": "",
+                    "title": "Tractive Produkttest",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000155,
+                        "expert_keywords": "",
+                        "title": "Tractive Produkttest",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=QgZHqvRp6fU "
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Förderung individueller Entwicklung/Bearbeitung der Entwicklungsaufgaben der Bewohner*innen über 'echte' Autonomie- und Gestaltungsspielräume möglich?",
+                "language": "",
+                "title": "Autonomie - Salutogenese",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000035,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000162,
+                    "title": "Mit 100 ist noch nicht Schluss",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000163,
+                        "expert_keywords": "",
+                        "title": "Mit 100 ist noch nicht Schluss",
+                        "automatic_explanation": "",
+                        "url": "https://www.zdf.de/dokumentation/37-grad/37-grad-mit-100-ist-noch-nicht-schluss-102.html"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000003,
+                    "title": "Fixierung oder nicht?",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000004,
+                        "expert_keywords": "",
+                        "title": "Fixierung oder nicht?",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=U9nisZSOhqc"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000128,
+                    "expert_keywords": "",
+                    "title": "Erikson, Phase 8",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000129,
+                        "expert_keywords": "",
+                        "title": "Erikson, Phase 8",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=vUCw-uJd6Z4"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000008,
+                    "expert_keywords": "",
+                    "title": "Freiheitsentziehende Maßnahmen in der Pflege",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000017,
+                        "expert_keywords": "",
+                        "title": "Freiheitsentziehende Maßnahmen in der Pflege",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=WJp6F24feQs"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000164,
+                    "title": "Entwicklungsaufgaben im Alter",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000165,
+                        "expert_keywords": "",
+                        "title": "Entwicklungsaufgaben im Alter",
+                        "automatic_explanation": "",
+                        "url": "https://www.zdf.de/dokumentation/37-grad/37-der-rest-ist-glueckssache-100.html"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000184,
+                    "expert_keywords": "",
+                    "title": "Leistungssport mit 90",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000185,
+                        "expert_keywords": "",
+                        "title": "Leistungssport mit 90",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=tSRw3vSSqw0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Verhinderung der Bearbeitung von Entwicklungsaufgaben der Bewohner*innen mangels Bereitstellung echter Autonomiespielräume im Kontext der Defizit-Hypothese?",
+                "language": "",
+                "title": "Autonomie - Pathogenese",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000036,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000043,
+                    "expert_keywords": "",
+                    "title": "Scheinbushaltestelle",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000053,
+                        "expert_keywords": "",
+                        "title": "Scheinbushaltestelle",
+                        "automatic_explanation": "",
+                        "url": "https://www.focus.de/gesundheit/ticker/schein-bushaltestelle-bringt-demenzkranke-ans-ziel-pflege_id_2220592.html"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000042,
+                    "expert_keywords": "",
+                    "title": "Scheinbushaltestelle",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000052,
+                        "expert_keywords": "",
+                        "title": "Scheinbushaltestelle",
+                        "automatic_explanation": "",
+                        "url": "https://de.wikipedia.org/wiki/Scheinbushaltestelle#:~:text=Eine%20Scheinbushaltestelle%20(auch%20Pseudohaltestelle%20oder,und%20einem%20ausgeh%C3%A4ngten%20Fahrplan%20ausgestattet."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Frage nach der Bereitstellung angemessener Entfaltungsräume, Transfer Altenhilfe",
+                "language": "",
+                "title": "Autonomie - Inklusion",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000037,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000152,
+                    "title": "Digitalisierung in der Altenhilfe",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000153,
+                        "expert_keywords": "",
+                        "title": "Digitalisierung in der Altenhilfe",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=ZiUxr6R41xM#"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "_updated": 1669811426296,
+                    "ID": 1000013,
+                    "title": "Demenzdorf",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000022,
+                        "expert_keywords": "",
+                        "title": "Demenzdorf",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=P--RJFrLTnw"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000166,
+                    "expert_keywords": "",
+                    "title": "Im Alter am Meer",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000167,
+                        "expert_keywords": "",
+                        "title": "Im Alter am Meer",
+                        "automatic_explanation": "",
+                        "url": "https://www.zdf.de/dokumentation/37-grad/37-im-ruhestand-am-nordseestrand-100.html"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000156,
+                    "expert_keywords": "",
+                    "title": "Familienleben mit Demenz, 37 Grad",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000157,
+                        "expert_keywords": "",
+                        "title": "Familienleben mit Demenz, 37 Grad",
+                        "automatic_explanation": "",
+                        "url": "https://www.zdf.de/dokumentation/37-grad/37-wie-heisst-du-100.html"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000154,
+                    "expert_keywords": "",
+                    "title": "Tractive Produkttest",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000155,
+                        "expert_keywords": "",
+                        "title": "Tractive Produkttest",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=QgZHqvRp6fU "
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000158,
+                    "expert_keywords": "",
+                    "title": "Bauernhof statt Altenheim, 37 Grad",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000159,
+                        "expert_keywords": "",
+                        "title": "Bauernhof statt Altenheim, 37 Grad",
+                        "automatic_explanation": "",
+                        "url": "https://www.zdf.de/dokumentation/37-grad/37-bauernhof-statt-altersheim-100.html"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Unterdrückung von Autonomiebestrebungen durch Labeling/Ablenkung/Auslösen von Regress?",
+                "language": "",
+                "title": "Autonomie - Validation",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000038,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000011,
+                    "expert_keywords": "",
+                    "title": "Psychologische Grundbedürfnisse nach Grawe",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000020,
+                        "expert_keywords": "",
+                        "title": "Psychologische Grundbedürfnisse nach Grawe",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=UV3Qnf0Gs7k"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000014,
+                    "expert_keywords": "",
+                    "title": "Fallbeispiele (Demenz begleiten ohne Kümmern) ",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000023,
+                        "expert_keywords": "",
+                        "title": "Fallbeispiele (Demenz begleiten ohne Kümmern) ",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=KZtlN22tjmg"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000015,
+                    "title": "Kritik an Validation nach Feil",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000024,
+                        "expert_keywords": "",
+                        "title": "Kritik an Validation nach Feil",
+                        "automatic_explanation": "",
+                        "url": "https://www.socialnet.de/rezensionen/260.php"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Warum sind Autonomiespielräume von Bedeutung um individuelle Entwicklung zu realisieren?",
+                "language": "",
+                "title": "Autonomie - Entwicklungsaufgaben",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000060,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000011,
+                    "expert_keywords": "",
+                    "title": "Psychologische Grundbedürfnisse nach Grawe",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000020,
+                        "expert_keywords": "",
+                        "title": "Psychologische Grundbedürfnisse nach Grawe",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=UV3Qnf0Gs7k"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000012,
+                    "expert_keywords": "",
+                    "title": "Gefängnis der Zukunft",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000021,
+                        "expert_keywords": "",
+                        "title": "Gefängnis der Zukunft",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=MaJI56wLz_c"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000009,
+                    "title": "Amerikanisches Jugendgefängnis",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000018,
+                        "expert_keywords": "",
+                        "title": "Amerikanisches Jugendgefängnis",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=6zEc7eAvIIg"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "expert_explanation": "",
+            "addable": "",
+            "learnable": "",
+            "embedding_model": "",
+            "description": "Fixierung / Überwachung",
+            "language": "",
+            "ID": 1000026,
+            "expert_keywords": "",
+            "title": "Komplex Zwang",
+            "automatic_explanation": "",
+            "assessmentable": "",
+            "topics": [
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Welchen Einfluss hat Sozialisation auf den Einsatz von Zwang/Machtausübung, bzw. das Vorhandensein von Ambiguitätstolerenz?",
+                "language": "",
+                "title": "Zwang - Sozialisation",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000061,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000096,
+                    "expert_keywords": "",
+                    "title": "Strafphilosophie",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000097,
+                        "expert_keywords": "",
+                        "title": "Strafphilosophie",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=9yNIo9-06YQ "
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000045,
+                    "expert_keywords": "",
+                    "title": "Sammelband Sozialisation",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000055,
+                        "expert_keywords": "",
+                        "title": "Sammelband Sozialisation",
+                        "automatic_explanation": "",
+                        "url": "https://link.springer.com/content/pdf/10.1007/978-3-658-22476-9_3.pdf"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Zusammenhang pathogenetischer Sicht auf Demenz und die Anwendung von Zwang/Machtausübung",
+                "language": "",
+                "title": "Zwang - Pathogenese",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000063,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000188,
+                    "expert_keywords": "",
+                    "title": "Alternsforschung",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000189,
+                        "expert_keywords": "",
+                        "title": "Alternsforschung",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=7GVkvM-_wtA"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000096,
+                    "expert_keywords": "",
+                    "title": "Strafphilosophie",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000097,
+                        "expert_keywords": "",
+                        "title": "Strafphilosophie",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=9yNIo9-06YQ "
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000098,
+                    "expert_keywords": "",
+                    "title": "Michel Foucault, Überwachen und Strafen",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000099,
+                        "expert_keywords": "",
+                        "title": "Michel Foucault, Überwachen und Strafen",
+                        "automatic_explanation": "",
+                        "url": "https://docplayer.org/11185214-Michel-foucault-ueberwachen-und-strafen.html"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Kann eine Institution ohne Zwang auskommen? / Ist Zwang Aufgabe der Insitution im Sinne der Fürsorge? / Wie müsste eine Institution gestaltet sein um ohne Zwang zu funktionieren?",
+                "language": "",
+                "title": "Zwang - Institution",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000066,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000049,
+                    "title": "Demenz, pflegerischer Alltag",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000059,
+                        "expert_keywords": "",
+                        "title": "Demenz, pflegerischer Alltag",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=vKUY4mounhc"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000046,
+                    "expert_keywords": "",
+                    "title": "Totale Institution",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000056,
+                        "expert_keywords": "",
+                        "title": "Totale Institution",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=w8Yz__5Z0Yc"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Zwang/Mangel an Autonomie als nicht entwicklungsförderliches Setting",
+                "language": "",
+                "title": "Zwang - Entwicklungsaufgaben",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000067,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000046,
+                    "expert_keywords": "",
+                    "title": "Totale Institution",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000056,
+                        "expert_keywords": "",
+                        "title": "Totale Institution",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=w8Yz__5Z0Yc"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000048,
+                    "expert_keywords": "",
+                    "title": "Das Gefängnis als psychische Krücke",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000058,
+                        "expert_keywords": "",
+                        "title": "Das Gefängnis als psychische Krücke",
+                        "automatic_explanation": "",
+                        "url": " https://www.ssoar.info/ssoar/bitstream/handle/document/29070/ssoar-psychges-1997-2-moller-das_gefangnis_als_psychische_krucke.pdf;jsessionid=9A63FB6A11159F9E5B9A19FF2BE82009?sequence=1"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Validation als konkreter Ausdruck eines pathogenetischen 'Point of no return'-Modells?",
+                "language": "",
+                "title": "Pathogenese - Validation",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000071,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000015,
+                    "title": "Kritik an Validation nach Feil",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000024,
+                        "expert_keywords": "",
+                        "title": "Kritik an Validation nach Feil",
+                        "automatic_explanation": "",
+                        "url": "https://www.socialnet.de/rezensionen/260.php"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000126,
+                    "expert_keywords": "",
+                    "title": "Validation, Interview",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000127,
+                        "expert_keywords": "",
+                        "title": "Validation, Interview",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=wT4MDBxqiiE"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000104,
+                    "expert_keywords": "",
+                    "title": "Alterstheorien",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000105,
+                        "expert_keywords": "",
+                        "title": "Alterstheorien",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=P7Tucsv3Y2w"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000124,
+                    "expert_keywords": "",
+                    "title": "Validation, Beispiel",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000125,
+                        "expert_keywords": "",
+                        "title": "Validation, Beispiel",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=DOC5BYn77c0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "path_explanation": "\nIhnen wird der Lernpfad empfohlen, weil es ersichtlich ist, dass die Themen in der Liste in Bezug auf \"Demenz als Herausforderung\" thematisch geordnet sind.\nZunächst beschäftigen sich die ersten beiden Themen mit dem Konzept der Autonomie in Bezug auf Demenz. Hier wird erörtert, wie freiheitseinschränkende Maßnahmen, Digitalisierung und das Herausfordernde Verhalten von Demenzpatienten die Autonomie beeinträchtigen können.\nDanach befasst sich die nächste Themenreihe mit dem Zwang in Bezug auf Sozialisation und Entwicklungsaufgaben. Hier geht es darum, wie Gefängnisse und die Strafphilosophie den Zwang in der Sozialisation beeinflussen können, sowie wie Konflikte und Aggressionen ohne Druck und Kindererziehung gelöst werden können.\nSchließlich beschäftigen sich die letzten beiden Themen mit der Pathogenese und den Entwicklungsaufgaben im Kontext der Sozialisation. Hier wird erörtert, wie Validation und Alterstheorien die Pathogenese beeinflussen können und wie das Konzept des Goffman'schen Theaters und die Anlage-Umwelt-Debatte die Entwicklungsaufgaben beeinflussen können.\nInsgesamt zeigt die Themenordnung eine logische Struktur, die das Konzept von \"Demenz als Herausforderung\" in Bezug auf Autonomie, Zwang, Pathogenese und Entwicklungsaufgaben untersucht.\n"
+    },
+    {
+      "recommended_journey": {
+        "id": 3000001,
+        "title": "Demenz als Herausforderung",
+        "description": "Journey designed for the first user profile in the test.",
+        "industry": "Human Health and Social Work",
+        "lang": "de",
+        "company": "",
+        "country": "Germany",
+        "city": "",
+        "created_at": "2022-11-25 15:44:22.704505+00:00",
+        "updated_at": "2022-11-30 14:03:23.763970+00:00",
+        "courses": [
+          {
+            "expert_explanation": "",
+            "addable": "",
+            "embedding_model": "",
+            "learnable": "",
+            "description": "",
+            "language": "",
+            "ID": 999995,
+            "expert_keywords": "",
+            "title": "Grundlagen Demenz",
+            "automatic_explanation": "",
+            "assessmentable": "",
+            "topics": [
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "expert_explanation": "",
+                "description": "",
+                "language": "",
+                "ID": 3000005,
+                "title": "Grundlegende Informationen zur Erkrankung Demenz",
+                "expert_keywords": "",
+                "automatic_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "description": "Was bedeutet das Aufdecken der gefälschten Studie für die Perspektive auf Demenz? Wie verändert das Wissen um die Fehlerhafte Studie die Perspektive und folglich auch den Umgang mit Demenz? Wie kommt es, dass viele Jahre der Forschung auf einer falschen Studie beruhen können - wer hat daran ein Interesse? Welche alternativen Erklärungsmodelle oder Einflussfaktoren kommen nun stärker in Betracht, wenn die Plaque Hypothese wiederlegt ist?",
+                    "ID": 3000105,
+                    "title": "Der Zusammenhang von Alzheimer-Demenz und Plaques im Gehirn",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000111,
+                        "expert_keywords": "",
+                        "title": "Gefälschte Studien",
+                        "automatic_explanation": "",
+                        "url": "https://www.tiktok.com/@gehirnwissen/video/7140330669732793605?is_copy_url=1&is_from_webapp=v1"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Wie lässt sich erklären, dass einige Nonnen trotz Plaques im Gehirn keine Anzeichen von Demenz zeigen? Was unterscheIDet das Leben der Nonnen von dem des überwiegenden Teil der Bevölkerung? Kann Demenz und deren Verlauf genetisch determiniert sein, wenn einige Nonnen diese offenbar zum großen Teil nicht entwickeln, obwohl Plaques im Gehirn vorhanden sind? Wie verändert dies die Sicht und den Umgang mit Demenz Erkrankungen? Möglicherweise lassen sich aus den Erkenntnissen Schutzfaktoren vor der Entwicklung von Symptomen demenzieller Erkrankungen ableiten?",
+                    "ID": 3000106,
+                    "title": "Der Zusammenhang von Alzheimer-Demenz und Plaques im Gehirn - ein Interview mit DavID Snowdon zur Nonnenstudie",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000115,
+                        "expert_keywords": "",
+                        "title": "Interview mit Snowdon",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=SkY8BfX75tU"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Wie lässt sich erklären, dass die Nonnen keine Anzeichen von Demenz aufzeigen? Was unterscheIDet das Leben der Nonnen von dem des überwiegenden Teil der Gesellschaft? Kann Demenz und deren Verlauf genetisch determiniert sein, wenn Nonnen diese offenbar zum großen Teil nicht entwickeln? Wie verändert dies die Sicht und den Umgang mit Demenz Erkrankungen? Möglicherweise lassen sich aus den Erkenntnissen Schutzfaktoren vor der Entwicklung von Symptomen demenzieller Erkrankungen ableiten?",
+                    "ID": 3000107,
+                    "title": "Die Nonnenstudie – sozialer Schutz vor Alzheimer-Demenz",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000117,
+                        "expert_keywords": "",
+                        "title": "Nonnenstudie",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=lKrE03veHAU"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Was bedeutet das Aufdecken der gefälschten Studie für die Perspektive auf Demenz? Wie verändert das Wissen um die fehlerhafte Studie die Perspektive und folglich auch den Umgang mit Demenz? Wie kommt es, dass viele Jahre der Forschung auf einer falschen Studie beruhen können - Wer hat daran ein Interesse? Welche alternativen Erklärungsmodelle oder Einflussfaktoren kommen nun stärker in Betracht, wenn die Plaque Hypothese wiederlegt ist?",
+                    "ID": 3000104,
+                    "title": "Der Zusammenhang von Alzheimer-Demenz und Plaques im Gehirn – ein Artikel aus SPIEGEL Wissenschaft",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000107,
+                        "expert_keywords": "",
+                        "title": "Gefälschte Studien",
+                        "automatic_explanation": "",
+                        "url": "https://www.spiegel.de/wissenschaft/medizin/wissenschaftsskandal-wegen-mutmasslichem-betrug-wie-ein-neurowissenschaftler-alzheimer-studien-faelschte-a-725a8aca-c270-4bf2-86b5-1708d0021ef9"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Gibt es 'die' Demenz? Ist der Verlauf einer Demenz determiniert? Wie lässt sich die Entwicklung einer Demenz möglicherweise beeinflussen? Entsprechen die dargestellten Inhalte dem aktuellen Stand der Wissenschaft? Die Plaque Hypothese gilt als überholt, warum ist diese dennoch so stark verbreitet? Wenn die Plaque Hypothese überholt ist, welche weiteren, ggf. nicht genetischen Einflussfaktoren sind möglich? Welche Folgen hat der Gedächtnisverlust für die Betroffenen? Wie wirkt sich das Wahrnehmen der eigenen Krankheit auf die Betroffenen aus?",
+                    "ID": 3000101,
+                    "title": "Demenz – eine kurze Erklärung verschiedener Krankheitsbilder",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "description": "Gibt es 'die' Demenz? Ist der Verlauf einer Demenz determiniert? Wie lässt sich die Entwicklung einer Demenz möglicherweise beeinflussen? Entsprechen die dargestellten Inhalte dem aktuellen Stand der Wissenschaft? Die Plaque Hypothese gilt als überholt, warum ist diese dennoch so stark verbreitet? Wenn die Plaque Hypothese überholt ist, welche weiteren, ggf. nicht genetischen Einflussfaktoren sind möglich? Welche Folgen hat der Gedächtnisverlust für die Betroffenen? Wie wirkt sich das Wahrnehmen der eigenen Krankheit auf die Betroffenen aus?",
+                        "ID": 3000201,
+                        "expert_keywords": "",
+                        "title": "Demenz – eine kurze Erklärung verschiedener Krankheitsbilder",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=ohqrPRdrwGw"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Was bedeutet das aufdecken der gefälschten Studie für die Perspektive auf Demenz? Wie verändert das Wissen um die Fehlerhafte Studie die Perspektive und folglich auch den Umgang mit Demenz? Wie kommt es dass viele Jahre der Forschung auf einer falschen Studie beruhen  können - wer hat daran ein Interesse? Welche alternativen Erklärungsmodelle oder Einflussfaktoren kommen nun stärker in Betracht, wenn die Plaque Hypothese wiederlegt ist?",
+                    "ID": 3000103,
+                    "title": "Der Zusammenhang von Alzheimer-Demenz und Plaques im Gehirn - ein Radiobeitrag",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000109,
+                        "expert_keywords": "",
+                        "title": "Gefälschte Studien",
+                        "automatic_explanation": "",
+                        "url": "https://www.deutschlandfunk.de/alzheimer-forschung-skandal-100.html"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Wozu bedarf es eines solchen Klassifikationssystems? Welcher Fachdisziplin ist ein solches System zuzuordnen? Bietet das System eine Ursachenerklärung? Lassen sich durch ein solches System oder die Diagnose ein Umgang mit Betroffenen ableiten? Welchen Nutzten hat die Anwendung des Systems im Pflegealltag?",
+                    "ID": 3000102,
+                    "title": "Demenz – die internationale Klassifikation nach ICD",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "description": "Wozu bedarf es eines solchen Klassifikationssystems? Welcher Fachdisziplin ist ein solches System zuzuordnen? Bietet das System eine Ursachenerklärung? Lassen sich durch ein solches System oder die Diagnose ein Umgang mit Betroffenen ableiten? Welchen Nutzten hat die Anwendung des Systems im Pflegealltag?",
+                        "ID": 3000202,
+                        "expert_keywords": "",
+                        "title": "Demenz – die internationale Klassifikation nach ICD",
+                        "automatic_explanation": "",
+                        "url": "https://www.bfarm.de/DE/Kodiersysteme/Klassifikationen/ICD/ICD-11/uebersetzung/_node.html;jsessionid=7BA10A1414CC75B286F91CA66F444521.intranet662"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "expert_explanation": "",
+                "description": "",
+                "language": "",
+                "ID": 3000007,
+                "title": "Demenz als Herausforderung in der häuslichen Pflege",
+                "expert_keywords": "",
+                "automatic_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "description": "Welche Besonderheiten ergeben sich unter dem Verhältnis von Nähe und Distanz? Kann ein Familienmitglied eine professionelle Pflegekraft ersetzen – welche besonderen Herausforderungen ergeben sich aus der Pflege eines eigenen Familienmitgliedes? Das Wissen  um die richtige Anwendung von Pflegemaßnahmen z.B. zur Körperpflege sind ein Faktor, doch weshalb kann eine professionelle Ausbildung der Pflege darüber hinaus hilfreich sein im Umgang mit demenziell Erkrankten? UnterscheIDet sich die Fixierung in einer Einrichtung der außerklinischen Pflege von Maßnahmen wie dem Türabschließen oder ähnlichem, durchgeführt von der eigenen Tochter? In welchem Konflikt steht die permanente Überwachung zu den Grundrechten der Betroffenen? Welche Autonomie, Entwicklungs- und Entfaltungsspielräume eröffnet die Pflege eines demenziell Erkrankten im privaten Umfeld im UnterscheID zur Pflege in einer Pflegeeinrichtung?",
+                    "ID": 3000114,
+                    "title": "Die dementen eigenen Eltern pflegen – eine besondere Herausforderung",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "description": "Welche Besonderheiten ergeben sich unter dem Verhältnis von Nähe und Distanz? Kann ein Familienmitglied eine professionelle Pflegekraft ersetzen – welche besonderen Herausforderungen ergeben sich aus der Pflege eines eigenen Familienmitgliedes? Das Wissen um die richtige Anwendung von Pflegemaßnahmen z.B. zur Körperpflege sind ein Faktor, doch weshalb kann eine professionelle Ausbildung der Pflege darüber hinaus hilfreich sein im Umgang mit demenziell Erkrankten? Unterscheidet sich die Fixierung in einer Einrichtung der außerklinischen Pflege von Maßnahmen wie dem Türabschließen oder ähnlichem, durchgeführt von der eigenen Tochter? In welchem Konflikt steht die permanente Überwachung zu den Grundrechten der Betroffenen? Welche Autonomie, Entwicklungs- und Entfaltungsspielräume eröffnet die Pflege eines demenziell Erkrankten im privaten Umfeld im Unterscheid zur Pflege in einer Pflegeeinrichtung?",
+                        "ID": 3000214,
+                        "expert_keywords": "",
+                        "title": "Die dementen eigenen Eltern pflegen – eine besondere Herausforderung",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=gBGy_78-40E"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "",
+                    "ID": 3000116,
+                    "title": "Familienleben mit demenziell erkrankten Menschen",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000157,
+                        "expert_keywords": "",
+                        "title": "Familienleben mit Demenz, 37 Grad",
+                        "automatic_explanation": "",
+                        "url": "https://www.zdf.de/dokumentation/37-grad/37-wie-heisst-du-100.html"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Welche Besonderheiten ergeben sich unter dem Verhältnis von Nähe und Distanz? Kann ein Familienmitglied eine professionelle Pflegekraft ersetzen – welche besonderen Herausforderungen ergeben sich aus der Pflege eines eigenen Familienmitgliedes? Das Wissen um die richtige Anwendung von Pflegemaßnahmen z.B. zur Körperpflege sind ein Faktor, doch weshalb kann eine professionelle Ausbildung der Pflege darüber hinaus hilfreich sein, im Umgang mit demenziell Erkrankten? Welche Autonomie, Entwicklungs- und Entfaltungsspielräume eröffnet die Pflege eines demenziell Erkrankten im privaten Umfeld im UnterscheID zur Pflege in einer Pflegeeinrichtung?",
+                    "ID": 3000115,
+                    "title": "Häusliche Pflege Angehöriger als Überforderung",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "description": "Welche Besonderheiten ergeben sich unter dem Verhältnis von Nähe und Distanz? Kann ein Familienmitglied eine professionelle Pflegekraft ersetzen – welche besonderen Herausforderungen ergeben sich aus der Pflege eines eigenen Familienmitgliedes? Das Wissen um die richtige Anwendung von Pflegemaßnahmen z.B. zur Körperpflege sind ein Faktor, doch weshalb kann eine professionelle Ausbildung der Pflege darüber hinaus hilfreich sein, im Umgang mit demenziell Erkrankten? Welche Autonomie, Entwicklungs- und Entfaltungsspielräume eröffnet die Pflege eines demenziell Erkrankten im privaten Umfeld im Unterscheid zur Pflege in einer Pflegeeinrichtung?",
+                        "ID": 3000215,
+                        "expert_keywords": "",
+                        "title": "Häusliche Pflege Angehöriger als Überforderung",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=VDporzQTIyQ"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Welche Besonderheiten Ergeben sich im Verhältnis von Nähe und Distanz? Kann ein Mitbewohner professionelle Pflege unter allen Umständen ersetzen? Worin unterscheIDet sich ein Mittbewohner von professioneller Pflege? Bleiben möglicherweise mehr Autonomie, Entwicklungs- und Entfaltungsräume erhalten als in anderen Settings institutioneller Pflege?",
+                    "ID": 3000117,
+                    "title": "Agnes‘ WG mit jungem Mann",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "description": "Welche Besonderheiten Ergeben sich im Verhältnis von Nähe und Distanz? Kann ein Mitbewohner professionelle Pflege unter allen Umständen ersetzen? Worin unterscheidet sich ein Mittbewohner von professioneller Pflege? Bleiben möglicherweise mehr Autonomie, Entwicklungs- und Entfaltungsräume erhalten als in anderen Settings institutioneller Pflege?",
+                        "ID": 3000217,
+                        "title": "Agnes‘ WG mit jungem Mann",
+                        "expert_keywords": "",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=tshqjNvu5Z4"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "description": "Wie lässt sich professionell Begründen, dass der Betroffene nicht deutlich und nur verpixelt gezeigt wird? Wie verändern die Symptome das Zusammenleben? Welche Besonderheiten ergeben sich unter dem Verhältnis von Nähe und Distanz? Kann ein Familienmitglied eine professionelle Pflegekraft ersetzen – welche besonderen Herausforderungen ergeben sich aus der Pflege eines eigenen Familienmitgliedes?",
+                    "ID": 3000113,
+                    "title": "Alzheimer-Demenz mit frühem Beginn – den Ehemann pflegen",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "description": "Wie lässt sich professionell Begründen, dass der Betroffene nicht deutlich und nur verpixelt gezeigt wird? Wie verändern die Symptome das Zusammenleben? Welche Besonderheiten ergeben sich unter dem Verhältnis von Nähe und Distanz? Kann ein Familienmitglied eine professionelle Pflegekraft ersetzen – welche besonderen Herausforderungen ergeben sich aus der Pflege eines eigenen Familienmitgliedes?",
+                        "ID": 3000213,
+                        "expert_keywords": "",
+                        "title": "Alzheimer-Demenz mit frühem Beginn – den Ehemann pflegen",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=_QZlPj5WFNY"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "expert_explanation": "",
+            "addable": "",
+            "embedding_model": "",
+            "learnable": "",
+            "description": "Autonomieerhalt / Autonomieförderung /  Evaluation der Themen Selbst- und Fremdbestimmung im Kontext psychischer Erkrankungen / instutionelle Einflussnahme auf das Ausleben von Autonomiebestrebungen / Reflexion der Angemessenheit / (unerkannter) Machtmissbrauch bei evidentem Machtgefälle / Entwicklung von Urteils-, Handlungs-, Kommunikations- und Gestaltungsfähigkeit",
+            "language": "",
+            "ID": 1000001,
+            "expert_keywords": "",
+            "title": "Komplex Autonomie",
+            "automatic_explanation": "",
+            "assessmentable": "",
+            "topics": [
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Inwiefern kann Autonomie im Kontext Demenz gewährleistet werden? /  Inwiefern kann Autonomie im Kontext Demenz beschränkt werden? / Autonomie vs. Überwachung",
+                "language": "",
+                "title": "Autonomie - Zwang",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000002,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "_created": 1668567274262,
+                    "description": " ",
+                    "_updated": 1668567362428,
+                    "ID": "2000001",
+                    "expert_keywords": "",
+                    "title": "Demenz/Herausforderndes Verhalten",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "_created": 1668567579788,
+                        "description": " ",
+                        "_updated": 1668567634864,
+                        "ID": "2000004",
+                        "expert_keywords": "",
+                        "title": "Demenz/Herausforderndes Verhalten",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=lwYhaT6nd7g"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "_created": 1668567274262,
+                    "description": " ",
+                    "_updated": 1668567362428,
+                    "ID": "2000001",
+                    "expert_keywords": "",
+                    "title": "Demenz/Herausforderndes Verhalten",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "_created": 1668567394664,
+                        "description": " ",
+                        "_updated": 1668567468919,
+                        "ID": "2000002",
+                        "expert_keywords": "",
+                        "title": "Demenz/Herausforderndes Verhalten",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=JKcWl6z9v3Q"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000003,
+                    "title": "Fixierung oder nicht?",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000004,
+                        "expert_keywords": "",
+                        "title": "Fixierung oder nicht?",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=U9nisZSOhqc"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000008,
+                    "expert_keywords": "",
+                    "title": "Freiheitsentziehende Maßnahmen in der Pflege",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000017,
+                        "expert_keywords": "",
+                        "title": "Freiheitsentziehende Maßnahmen in der Pflege",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=WJp6F24feQs"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000152,
+                    "title": "Digitalisierung in der Altenhilfe",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000153,
+                        "expert_keywords": "",
+                        "title": "Digitalisierung in der Altenhilfe",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=ZiUxr6R41xM#"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000154,
+                    "expert_keywords": "",
+                    "title": "Tractive Produkttest",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000155,
+                        "expert_keywords": "",
+                        "title": "Tractive Produkttest",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=QgZHqvRp6fU "
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Verhinderung der Bearbeitung von Entwicklungsaufgaben der Bewohner*innen mangels Bereitstellung echter Autonomiespielräume im Kontext der Defizit-Hypothese?",
+                "language": "",
+                "title": "Autonomie - Pathogenese",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000036,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000043,
+                    "expert_keywords": "",
+                    "title": "Scheinbushaltestelle",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000053,
+                        "expert_keywords": "",
+                        "title": "Scheinbushaltestelle",
+                        "automatic_explanation": "",
+                        "url": "https://www.focus.de/gesundheit/ticker/schein-bushaltestelle-bringt-demenzkranke-ans-ziel-pflege_id_2220592.html"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000042,
+                    "expert_keywords": "",
+                    "title": "Scheinbushaltestelle",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000052,
+                        "expert_keywords": "",
+                        "title": "Scheinbushaltestelle",
+                        "automatic_explanation": "",
+                        "url": "https://de.wikipedia.org/wiki/Scheinbushaltestelle#:~:text=Eine%20Scheinbushaltestelle%20(auch%20Pseudohaltestelle%20oder,und%20einem%20ausgeh%C3%A4ngten%20Fahrplan%20ausgestattet."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Förderung individueller Entwicklung/Bearbeitung der Entwicklungsaufgaben der Bewohner*innen über 'echte' Autonomie- und Gestaltungsspielräume möglich?",
+                "language": "",
+                "title": "Autonomie - Salutogenese",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000035,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000162,
+                    "title": "Mit 100 ist noch nicht Schluss",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000163,
+                        "expert_keywords": "",
+                        "title": "Mit 100 ist noch nicht Schluss",
+                        "automatic_explanation": "",
+                        "url": "https://www.zdf.de/dokumentation/37-grad/37-grad-mit-100-ist-noch-nicht-schluss-102.html"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000003,
+                    "title": "Fixierung oder nicht?",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000004,
+                        "expert_keywords": "",
+                        "title": "Fixierung oder nicht?",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=U9nisZSOhqc"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000128,
+                    "expert_keywords": "",
+                    "title": "Erikson, Phase 8",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000129,
+                        "expert_keywords": "",
+                        "title": "Erikson, Phase 8",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=vUCw-uJd6Z4"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000008,
+                    "expert_keywords": "",
+                    "title": "Freiheitsentziehende Maßnahmen in der Pflege",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000017,
+                        "expert_keywords": "",
+                        "title": "Freiheitsentziehende Maßnahmen in der Pflege",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=WJp6F24feQs"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000164,
+                    "title": "Entwicklungsaufgaben im Alter",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000165,
+                        "expert_keywords": "",
+                        "title": "Entwicklungsaufgaben im Alter",
+                        "automatic_explanation": "",
+                        "url": "https://www.zdf.de/dokumentation/37-grad/37-der-rest-ist-glueckssache-100.html"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000184,
+                    "expert_keywords": "",
+                    "title": "Leistungssport mit 90",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000185,
+                        "expert_keywords": "",
+                        "title": "Leistungssport mit 90",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=tSRw3vSSqw0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Warum sind Autonomiespielräume von Bedeutung um individuelle Entwicklung zu realisieren?",
+                "language": "",
+                "title": "Autonomie - Entwicklungsaufgaben",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000060,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000011,
+                    "expert_keywords": "",
+                    "title": "Psychologische Grundbedürfnisse nach Grawe",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000020,
+                        "expert_keywords": "",
+                        "title": "Psychologische Grundbedürfnisse nach Grawe",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=UV3Qnf0Gs7k"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000012,
+                    "expert_keywords": "",
+                    "title": "Gefängnis der Zukunft",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000021,
+                        "expert_keywords": "",
+                        "title": "Gefängnis der Zukunft",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=MaJI56wLz_c"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000009,
+                    "title": "Amerikanisches Jugendgefängnis",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000018,
+                        "expert_keywords": "",
+                        "title": "Amerikanisches Jugendgefängnis",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=6zEc7eAvIIg"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "expert_explanation": "",
+            "addable": "",
+            "learnable": "",
+            "embedding_model": "",
+            "description": "Fixierung / Überwachung",
+            "language": "",
+            "ID": 1000026,
+            "expert_keywords": "",
+            "title": "Komplex Zwang ",
+            "automatic_explanation": "",
+            "assessmentable": "",
+            "topics": [
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Welchen Einfluss hat Sozialisation auf den Einsatz von Zwang/Machtausübung, bzw. das Vorhandensein von Ambiguitätstolerenz?",
+                "language": "",
+                "title": "Zwang - Sozialisation",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000061,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000096,
+                    "expert_keywords": "",
+                    "title": "Strafphilosophie",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000097,
+                        "expert_keywords": "",
+                        "title": "Strafphilosophie",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=9yNIo9-06YQ "
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000045,
+                    "expert_keywords": "",
+                    "title": "Sammelband Sozialisation",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000055,
+                        "expert_keywords": "",
+                        "title": "Sammelband Sozialisation",
+                        "automatic_explanation": "",
+                        "url": "https://link.springer.com/content/pdf/10.1007/978-3-658-22476-9_3.pdf"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Zusammenhang pathogenetischer Sicht auf Demenz und die Anwendung von Zwang/Machtausübung",
+                "language": "",
+                "title": "Zwang - Pathogenese",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000063,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "_created": 1668567274262,
+                    "description": " ",
+                    "_updated": 1668567362428,
+                    "ID": "2000001",
+                    "expert_keywords": "",
+                    "title": "Demenz/Herausforderndes Verhalten",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "_created": 1668567579788,
+                        "description": " ",
+                        "_updated": 1668567634864,
+                        "ID": "2000004",
+                        "expert_keywords": "",
+                        "title": "Demenz/Herausforderndes Verhalten",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=lwYhaT6nd7g"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "_created": 1668567274262,
+                    "description": " ",
+                    "_updated": 1668567362428,
+                    "ID": "2000001",
+                    "expert_keywords": "",
+                    "title": "Demenz/Herausforderndes Verhalten",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "_created": 1668567394664,
+                        "description": " ",
+                        "_updated": 1668567468919,
+                        "ID": "2000002",
+                        "expert_keywords": "",
+                        "title": "Demenz/Herausforderndes Verhalten",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=JKcWl6z9v3Q"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000188,
+                    "expert_keywords": "",
+                    "title": "Alternsforschung",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000189,
+                        "expert_keywords": "",
+                        "title": "Alternsforschung",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=7GVkvM-_wtA"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000096,
+                    "expert_keywords": "",
+                    "title": "Strafphilosophie",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000097,
+                        "expert_keywords": "",
+                        "title": "Strafphilosophie",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=9yNIo9-06YQ "
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000098,
+                    "expert_keywords": "",
+                    "title": "Michel Foucault, Überwachen und Strafen",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000099,
+                        "expert_keywords": "",
+                        "title": "Michel Foucault, Überwachen und Strafen",
+                        "automatic_explanation": "",
+                        "url": "https://docplayer.org/11185214-Michel-foucault-ueberwachen-und-strafen.html"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "difficulty_level": "",
+                "learnable": "",
+                "embedding_model": "",
+                "description": "Kann eine Institution ohne Zwang auskommen? / Ist Zwang Aufgabe der Insitution im Sinne der Fürsorge? / Wie müsste eine Institution gestaltet sein um ohne Zwang zu funktionieren?",
+                "language": "",
+                "title": "Zwang - Institution",
+                "automatic_explanation": "",
+                "expert_explanation": "",
+                "knowledge_requirements": "",
+                "situational_characteristics": "",
+                "ID": 1000066,
+                "expert_keywords": "",
+                "methodology": "",
+                "assessmentable": "",
+                "educational_packages": [
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000049,
+                    "title": "Demenz, pflegerischer Alltag",
+                    "expert_keywords": "",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000059,
+                        "expert_keywords": "",
+                        "title": "Demenz, pflegerischer Alltag",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=vKUY4mounhc"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000046,
+                    "expert_keywords": "",
+                    "title": "Totale Institution",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000057,
+                        "expert_keywords": "",
+                        "title": "Totale Institution",
+                        "automatic_explanation": "",
+                        "url": "https://de.wikipedia.org/wiki/Totale_Institution"
+                      }
+                    ]
+                  },
+                  {
+                    "expert_explanation": "",
+                    "embedding_model": "",
+                    "description": "",
+                    "ID": 1000046,
+                    "expert_keywords": "",
+                    "title": "Totale Institution",
+                    "automatic_explanation": "",
+                    "educational_contents": [
+                      {
+                        "expert_explanation": "",
+                        "embedding_model": "",
+                        "description": "",
+                        "ID": 1000056,
+                        "expert_keywords": "",
+                        "title": "Totale Institution",
+                        "automatic_explanation": "",
+                        "url": "https://www.youtube.com/watch?v=w8Yz__5Z0Yc"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "path_explanation": "\nIhnen wird der Lernpfad empfohlen, weil es ersichtlich ist, dass die Themen in der Liste in Bezug auf \"Demenz als Herausforderung\" thematisch geordnet sind.\nZunächst beschäftigen sich die ersten beiden Themen mit dem Konzept der Autonomie in Bezug auf Demenz. Hier wird erörtert, wie freiheitseinschränkende Maßnahmen, Digitalisierung und das Herausfordernde Verhalten von Demenzpatienten die Autonomie beeinträchtigen können.\nDanach befasst sich die nächste Themenreihe mit dem Zwang in Bezug auf Sozialisation und Entwicklungsaufgaben. Hier geht es darum, wie Gefängnisse und die Strafphilosophie den Zwang in der Sozialisation beeinflussen können, sowie wie Konflikte und Aggressionen ohne Druck und Kindererziehung gelöst werden können.\nSchließlich beschäftigen sich die letzten beiden Themen mit der Pathogenese und den Entwicklungsaufgaben im Kontext der Sozialisation. Hier wird erörtert, wie Validation und Alterstheorien die Pathogenese beeinflussen können und wie das Konzept des Goffman'schen Theaters und die Anlage-Umwelt-Debatte die Entwicklungsaufgaben beeinflussen können.\nInsgesamt zeigt die Themenordnung eine logische Struktur, die das Konzept von \"Demenz als Herausforderung\" in Bezug auf Autonomie, Zwang, Pathogenese und Entwicklungsaufgaben untersucht.\n"
+    }
+  ]
