@@ -1,0 +1,14 @@
+<div class="flex justify-center items-center">
+  <mat-icon
+    *ngFor="let item of [].constructor(count); let i = index"
+    class="cursor-pointer rating-star"
+    [attr.data-index]="i + 1"
+    [class.text-blue-500]="control.value >= i + 1"
+    [class.text-blue-gray-600]="control.value < i + 1"
+    (click)="setValue(i + 1)"
+    (mouseenter)="hoverStateIn($event)"
+    (mouseleave)="hoverStateOut($event)"
+  >
+    {{ control.value >= i + 1 ? "star" : "star_outline" }}
+  </mat-icon>
+</div>

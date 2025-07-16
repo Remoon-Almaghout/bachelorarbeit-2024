@@ -1,0 +1,23 @@
+<div
+  *ngIf="show"
+  class="shadow-md"
+  style="z-index: 10000"
+  @state
+  [ngClass]="['snackbar-wrap', type]"
+>
+  <div class="flex items-center">
+    <mat-icon>
+      {{
+        type === "success"
+          ? "check_circle_outline"
+          : type === "info"
+          ? "info"
+          : "error_outline"
+      }}
+    </mat-icon>
+
+    <p class="snackbar-text text-sm m-0">
+      {{ message }}
+    </p>
+  </div>
+</div>

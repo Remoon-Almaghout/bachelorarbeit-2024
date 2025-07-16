@@ -1,0 +1,59 @@
+<div class=" border-400 rounded-md py-2 px-4 bg-200" style="background-color: #c1e3fa;" >
+  <div class="flex items-center justify-space-between"  >
+    <div >
+      <p class="text-blue-500 text-base mt-0 mb-025 text-bold">
+        Why are these recommendations shown to me?
+      </p>
+      <p class="text-blue-500 text-medium" *ngIf="recommendation">
+        {{ recommendation.path_explanation }}
+      </p>
+      <p class="text-blue-500 text-medium m-0">{{ 
+        isDiagramPage ? 'For more information, Please click the button shown below.' : 'Also recommendations are shown to you because your configuration of your
+        user profile:'
+      }}
+      </p>
+      <div class="flex flex-wrap" style="gap: 0.25rem; max-width: 1200px; margin-top: 0.5rem" *ngIf="userProfile">
+        <pill [title]="label" *ngFor="let label of labels"></pill>
+      </div>
+    </div>
+    <div class="ml-6">
+      <button mat-flat-button color="blue" [routerLink]="['/user-profile']"
+       onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0px 0px 10px rgba(0, 0, 0, 0.2)';"
+      onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+        <mat-icon class="icon-size-sm">manage_accounts</mat-icon>
+        <span style="font-size: small;" > Change profile </span>
+      </button>
+      <br>
+      <br>
+
+    </div>
+
+  </div>
+
+  <br>
+  <div *ngIf="!isDiagramPage" class="d-flex justify-content-center align-items-center">
+    <button mat-flat-button color="blue" [routerLink]="['/diagram']" [queryParams]="{journey_id : journey_id, journey_title: journey_title}" class="custom-button"
+      style="font-size: large; transition: transform 0.3s, box-shadow 0.3s; 
+      " 
+      onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0px 0px 10px rgba(0, 0, 0, 0.2)';"
+      onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+      <mat-icon class="icon-size-sm" style="font-size: 1.7em;">school</mat-icon>
+      <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; <strong>Go to learn your recommendation</strong></span>
+    </button>
+  </div>
+
+  <div *ngIf="isDiagramPage" class="d-flex justify-content-center align-items-center">
+    <button mat-flat-button color="blue" [routerLink]="['/dashboard']" [queryParams]="{journey_id : journey_id, journey_title: journey_title}" class="custom-button"
+      style="font-size: large; transition: transform 0.3s, box-shadow 0.3s;
+      " 
+      onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0px 0px 10px rgba(0, 0, 0, 0.2)';"
+      onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+      <mat-icon class="icon-size-sm" style="font-size: 1.7em;">explore</mat-icon>
+      <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; <strong>More Information about your selected recommendation</strong></span>
+    </button>
+  </div>
+  
+  
+
+
+</div>

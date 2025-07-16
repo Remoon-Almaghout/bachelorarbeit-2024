@@ -1,0 +1,16 @@
+<loading class="centered-axis-xy" *ngIf="isLoading"></loading>
+<div *ngIf="!isLoading">
+  <div class="flex items-center justify-space-between mb-4">
+    <h3 class="text-blue-900 mt-0">OER</h3>
+    <p class="text-blue-900 mt-0 text-sm text-semi-bold">
+      Amount: {{ oers.length }}
+    </p>
+  </div>
+  <grid [cols]="3">
+    <oer-card
+      [oer]="oer"
+      *ngFor="let oer of oers"
+      (click)="onClick(oer)"
+    ></oer-card>
+  </grid>
+</div>

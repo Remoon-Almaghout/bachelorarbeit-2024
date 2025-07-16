@@ -1,0 +1,125 @@
+// Text size
+.text-xs {
+  font-size: 0.67rem;
+  line-height: 0.75rem;
+}
+
+.text-sm {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+
+.text-medium {
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+}
+
+
+.text-base {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-5xl {
+  font-size: 2.375rem;
+  line-height: 2.25rem;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+// Text color
+.text-dark-700 {
+  color: $dark-700;
+}
+
+.text-blue-900 {
+  color: $blue-900;
+}
+
+.text-blue-500 {
+  color: $blue-500 ;
+}
+
+.text-blue-400 {
+  color: $blue-400 !important;
+}
+
+.text-blue-200 {
+  color: $blue-200;
+}
+
+.text-blue-gray-200 {
+  color: $blue-gray-200
+}
+
+.text-blue-gray-400 {
+  color: $blue-gray-400
+}
+
+.text-blue-gray-500 {
+  color: $blue-gray-500
+}
+
+.text-blue-gray-600 {
+  color: $blue-gray-600
+}
+
+.text-red-500 {
+  color: $red-500
+}
+
+.text-green-600 {
+  color: $green-600
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-link {
+  cursor: pointer;
+  &:hover {
+    color: $blue-500
+  }
+}

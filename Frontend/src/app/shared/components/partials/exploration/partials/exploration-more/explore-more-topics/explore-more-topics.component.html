@@ -1,0 +1,18 @@
+<loading class="centered-axis-xy" *ngIf="isLoading"></loading>
+<div [class.opacity-6]="isLoading">
+  <div class="flex items-center justify-space-between mb-8">
+    <h3 class="text-blue-900 mt-0">Related topics</h3>
+    <p class="text-blue-900 mt-0 text-sm text-semi-bold">
+      Amount: {{ relatedTopics.length }}
+    </p>
+  </div>
+
+  <grid [cols]="3">
+    <explore-topic-card
+      (goToRelated)="goToRelated.emit($event)"
+      (goToProfile)="goToProfile()"
+      [topic]="relatedTopic"
+      *ngFor="let relatedTopic of relatedTopics"
+    ></explore-topic-card>
+  </grid>
+</div>

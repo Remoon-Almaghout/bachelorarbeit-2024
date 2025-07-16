@@ -1,0 +1,21 @@
+<div class="flex flex-wrap items-center">
+  <mat-icon class="text-dark-700 icon-size-sm mr-05">arrow_right_alt</mat-icon>
+
+  <div
+    *ngFor="let item of history; let last = last; let index = index"
+    class="flex items-center flex-wrap"
+  >
+    <a
+      (click)="goToBreadCrumb.emit(index)"
+      [class.text-dark-700]="!last"
+      [class.text-blue-500]="last"
+      [class.text-bold]="last"
+      class="text-sm text-link"
+    >
+      {{ item.title }}
+    </a>
+    <mat-icon class="text-dark-700 icon-size-sm ml-05" *ngIf="!last"
+      >keyboard_arrow_right</mat-icon
+    >
+  </div>
+</div>

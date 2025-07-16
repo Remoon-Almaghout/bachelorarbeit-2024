@@ -1,0 +1,381 @@
+<form
+  #form="ngForm"
+  [formGroup]="itemForm"
+  (ngSubmit)="onSubmit()"
+  *ngIf="!isLoading"
+>
+  <div class="bg-white rounded-md px-5 mb-4 py-3" style="border: 1px solid #ecedf4">
+    <h3 class="text-xl text-blue-gray-500 text-normal mb-0">
+      Personal Information
+    </h3>
+    <div class="py-7 d-flex flex-column gap-4" >
+      <grid [cols]="2">
+        <div>
+          <p class="text-blue-900 text-sm text-bold">Name</p>
+          <mat-form-field
+            class="w-full form-field-no-spacing"
+            appearance="outline"
+          >
+            <input
+              matInput
+              placeholder="Please enter your name"
+              [formControl]="$any(itemForm.get('name'))"
+            />
+          </mat-form-field>
+        </div>
+        <div>
+          <p class="text-blue-900 text-sm text-bold">Date of Birth</p>
+          <mat-form-field
+            class="w-full form-field-no-spacing"
+            appearance="outline"
+          >
+            <input
+              matInput
+              type="date"
+              [max]="todayDate"
+              placeholder="Please enter your date of birth"
+              [formControl]="$any(itemForm.get('dateOfBirth'))"
+            />
+          </mat-form-field>
+        </div>
+        <div>
+          <p class="text-blue-900 text-sm text-bold">Country</p>
+          <mat-form-field
+            class="w-full form-field-no-spacing"
+            appearance="outline"
+          >
+            <input
+              matInput
+              placeholder="Please enter your country"
+              [formControl]="$any(itemForm.get('country'))"
+              [matAutocomplete]="autoCountries"
+            />
+            <mat-autocomplete
+              autoActiveFirstOption
+              #autoCountries="matAutocomplete"
+            >
+              <mat-option
+                *ngFor="let option of filteredCountryOptions | async"
+                [value]="option.name"
+              >
+                {{ option.name }}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </div>
+        <div>
+          <p class="text-blue-900 text-sm text-bold">City</p>
+          <mat-form-field
+            class="w-full form-field-no-spacing"
+            appearance="outline"
+          >
+            <input
+              matInput
+              placeholder="Please enter your city"
+              [formControl]="$any(itemForm.get('city'))"
+            />
+          </mat-form-field>
+        </div>
+      </grid>
+      <div class="d-flex flex-column gap-4">
+        <div>
+        <p class="text-blue-900 text-sm text-bold">Company</p>
+        <mat-form-field
+          class="w-full form-field-no-spacing"
+          appearance="outline"
+        >
+          <input
+            matInput
+            placeholder="Please enter your company"
+            [formControl]="$any(itemForm.get('company'))"
+          />
+        </mat-form-field>
+      </div>
+      <div>
+        <p class="text-blue-900 text-sm text-bold">Biography</p>
+        <mat-form-field
+          class="w-full form-field-no-spacing"
+          appearance="outline"
+        >
+          <textarea
+            matInput
+            placeholder="Please enter your biography"
+            [formControl]="$any(itemForm.get('biography'))"
+          ></textarea>
+        </mat-form-field>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-white rounded-md px-5 mb-4 py-3" style="border: 1px solid #ecedf4">
+    <h3 class="text-xl text-blue-gray-500 text-normal mb-0">
+      Background Knowledge
+    </h3>
+    <div class="py-7 border-b-1 border-blue-gray-300">
+      <p class="text-blue-900 text-sm text-bold">
+        Do you have background knowledge about a topic field?
+      </p>
+      <chips-autocomplete
+        [control]="$any(itemForm.get('topics'))"
+        [isLoading]="!topics.length"
+        [data]="topics"
+      ></chips-autocomplete>
+    </div>
+    <div class="py-7">
+      <p class="text-blue-900 text-sm text-bold">
+        Have you already attended a course?
+      </p>
+      <chips-autocomplete
+        [control]="$any(itemForm.get('courses'))"
+        [isLoading]="!courses.length"
+        [data]="courses"
+      ></chips-autocomplete>
+    </div>
+  </div>
+  <div class="bg-white rounded-md px-5 mb-4 py-3" style="border: 1px solid #ecedf4">
+    <h3 class="text-xl text-blue-gray-500 text-normal mb-0">Preferences</h3>
+    <div class="py-7 border-b-1 border-blue-gray-300">
+      <p class="text-blue-900 text-sm text-bold">
+        What is your graph exploration preference?
+      </p>
+      <mat-radio-group
+        [formControl]="$any(itemForm.get('graphExplorationPreference'))"
+      >
+        <mat-radio-button [value]="0" color="primary">
+          <span class="text-sm text-blue-gray-600 mat-radio-replacement-label">
+            Explore more content
+          </span>
+        </mat-radio-button>
+        <mat-radio-button [value]="1" color="primary">
+          <span class="text-sm text-blue-gray-600 mat-radio-replacement-label">
+            Focus on final goal
+          </span>
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <div class="py-7 border-b-1 border-blue-gray-300">
+      <p class="text-blue-900 text-sm text-bold">
+        How much time do you have available?
+      </p>
+      <div class="flex" style="gap: 1rem">
+        <div class="flex flex-column">
+          <mat-label class="text-xs text-blue-gray-500"
+            >Number of weeks</mat-label
+          >
+          <mat-form-field
+            class="form-field-no-spacing"
+            appearance="outline"
+            style="width: 160px"
+          >
+            <input
+              matInput
+              min="1"
+              type="number"
+              [formControl]="$any(itemForm.get('numberOfWeeks'))"
+            />
+          </mat-form-field>
+        </div>
+        <div class="flex flex-column">
+          <mat-label class="text-xs text-blue-gray-500"
+            >Number of hours per week</mat-label
+          >
+          <mat-form-field
+            class="form-field-no-spacing"
+            appearance="outline"
+            style="width: 160px"
+          >
+            <input
+              matInput
+              min="1"
+              type="number"
+              [formControl]="$any(itemForm.get('hoursPerWeek'))"
+            />
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-7 border-b-1 border-blue-gray-300">
+      <p class="text-blue-900 text-sm text-bold">
+        What is your educational content length preference?
+      </p>
+      <mat-radio-group
+        [formControl]="$any(itemForm.get('educationalContentLength'))"
+      >
+        <mat-radio-button [value]="0" color="primary">
+          <span class="text-sm text-blue-gray-600 mat-radio-replacement-label">
+            Short
+          </span>
+        </mat-radio-button>
+
+        <mat-radio-button [value]="1" color="primary">
+          <span class="text-sm text-blue-gray-600 mat-radio-replacement-label">
+            Medium
+          </span>
+        </mat-radio-button>
+        <mat-radio-button [value]="2" color="primary">
+          <span class="text-sm text-blue-gray-600 mat-radio-replacement-label">
+            Long
+          </span>
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <div class="py-7 border-b-1 border-blue-gray-300">
+      <p class="text-blue-900 text-sm text-bold">
+        What is your level of detail preference?
+      </p>
+      <mat-radio-group [formControl]="$any(itemForm.get('levelOfDetail'))">
+        <mat-radio-button [value]="0" color="primary">
+          <span class="text-sm text-blue-gray-600 mat-radio-replacement-label">
+            Low
+          </span>
+        </mat-radio-button>
+
+        <mat-radio-button [value]="1" color="primary">
+          <span class="text-sm text-blue-gray-600 mat-radio-replacement-label">
+            Medium
+          </span>
+        </mat-radio-button>
+        <mat-radio-button [value]="2" color="primary">
+          <span class="text-sm text-blue-gray-600 mat-radio-replacement-label">
+            High
+          </span>
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <div class="py-7 border-b-1 border-blue-gray-300">
+      <p class="text-blue-900 text-sm text-bold">
+        What is your content type preference?
+      </p>
+      <mat-radio-group [formControl]="$any(itemForm.get('contentType'))">
+        <mat-radio-button [value]="0" color="primary">
+          <span class="text-sm text-blue-gray-600 mat-radio-replacement-label">
+            Only theory
+          </span>
+        </mat-radio-button>
+        <mat-radio-button [value]="1" color="primary">
+          <span class="text-sm text-blue-gray-600 mat-radio-replacement-label">
+            Only examples
+          </span>
+        </mat-radio-button>
+        <mat-radio-button [value]="2" color="primary">
+          <span class="text-sm text-blue-gray-600 mat-radio-replacement-label">
+            Theory and examples
+          </span>
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <div class="py-7 border-b-1 border-blue-gray-300">
+      <p class="text-blue-900 text-sm text-bold">
+        Do you prefer content that covers more than one topic?
+      </p>
+      <mat-slide-toggle
+        formControlName="moreThanOneTopic"
+        [formControl]="$any(itemForm.get('moreThanOneTopic'))"
+      >
+      </mat-slide-toggle>
+    </div>
+    <div class="py-7 border-b-1 border-blue-gray-300">
+      <p class="text-blue-900 text-sm text-bold">
+        Do you prefer content given in a classroom?
+      </p>
+      <mat-slide-toggle
+        formControlName="contentInClassroom"
+        [formControl]="$any(itemForm.get('contentInClassroom'))"
+      >
+      </mat-slide-toggle>
+    </div>
+    <div class="py-7">
+      <div class="mb-8">
+        <p class="text-blue-900 text-sm text-bold">
+          Select the degree, to which you like each of the delivery formats? (1:
+          very much dislike, 5: very much like)
+        </p>
+      </div>
+      <div class="flex flex-wrap" style="gap: 1rem">
+        <div
+          class="flex flex-column justify-center items-center p-5 rounded-md bg-blue-100"
+        >
+          <div
+            class="rounded-full mb-05 bg-blue-300 flex items-center justify-center"
+            style="width: 3rem; height: 3rem"
+          >
+            <mat-icon class="text-blue-500"> videocam </mat-icon>
+          </div>
+          <div class="mb-4">
+            <span class="text-blue-900 text-bold text-base"> Videos </span>
+          </div>
+          <star-rating
+            [control]="$any(itemForm.get('degreeVideo'))"
+          ></star-rating>
+        </div>
+        <div
+          class="flex flex-column justify-center items-center p-5 rounded-md bg-blue-100"
+        >
+          <div
+            class="rounded-full mb-05 bg-blue-300 flex items-center justify-center"
+            style="width: 3rem; height: 3rem"
+          >
+            <mat-icon class="text-blue-500"> menu_book </mat-icon>
+          </div>
+          <div class="mb-4">
+            <span class="text-blue-900 text-bold text-base">
+              Book Chapters
+            </span>
+          </div>
+          <star-rating
+            [control]="$any(itemForm.get('degreeBookChapters'))"
+          ></star-rating>
+        </div>
+        <div
+          class="flex flex-column justify-center items-center p-5 rounded-md bg-blue-100"
+        >
+          <div
+            class="rounded-full mb-05 bg-blue-300 flex items-center justify-center"
+            style="width: 3rem; height: 3rem"
+          >
+            <mat-icon class="text-blue-500"> language </mat-icon>
+          </div>
+          <div class="mb-4">
+            <span class="text-blue-900 text-bold text-base"> Web Pages </span>
+          </div>
+          <star-rating
+            [control]="$any(itemForm.get('degreeWebpages'))"
+          ></star-rating>
+        </div>
+        <div
+          class="flex flex-column justify-center items-center p-5 rounded-md bg-blue-100"
+        >
+          <div
+            class="rounded-full mb-05 bg-blue-300 flex items-center justify-center"
+            style="width: 3rem; height: 3rem"
+          >
+            <mat-icon class="text-blue-500"> co_present </mat-icon>
+          </div>
+          <div class="mb-4">
+            <span class="text-blue-900 text-bold text-base"> Slides </span>
+          </div>
+          <star-rating
+            [control]="$any(itemForm.get('degreeSlides'))"
+          ></star-rating>
+        </div>
+        <div
+          class="flex flex-column justify-center items-center p-5 rounded-md bg-blue-100"
+        >
+          <div
+            class="rounded-full mb-05 bg-blue-300 flex items-center justify-center"
+            style="width: 3rem; height: 3rem"
+          >
+            <mat-icon class="text-blue-500"> article </mat-icon>
+          </div>
+          <div class="mb-4">
+            <span class="text-blue-900 text-bold text-base"> Papers </span>
+          </div>
+          <star-rating
+            [control]="$any(itemForm.get('degreePapers'))"
+          ></star-rating>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

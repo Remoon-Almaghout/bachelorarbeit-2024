@@ -1,0 +1,442 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap");
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+// Main variables
+@import "scss/variables";
+
+// normalize.css v8.0.1
+@import "scss/normalize";
+
+// Override angular material styles
+@import "scss/material";
+
+// Main text styles
+@import "scss/text";
+
+// Main grid styles
+@import "scss/grid";
+
+// Main helper styles
+@import "scss/helpers";
+
+// Main button styles
+@import "scss/button";
+
+// Main snackbar styles
+@import "scss/snackbar";
+
+
+@import '@ctrl/ngx-emoji-mart/picker';
+
+
+body {
+  // font-family: "Noto Sans", sans-serif;
+  font-family: 'Roboto';
+  background: #d4e9f7;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-wrapper {
+  background: $dark-800;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 320px;
+}
+
+.content-wrapper {
+  width: calc(100vw - 320px);
+  margin-left: 320px;
+}
+
+.navigation {
+  display: flex;
+  cursor: pointer;
+  .navigation-item {
+    height: 58px;
+    padding: 0 1.25rem;
+    // margin: 0 .35rem;
+    display: flex;
+    align-items: center;
+
+    &.navigation-danger {
+      .mat-icon {
+        color: $red-500;
+      }
+
+      span {
+        color: $red-500;
+      }
+    }
+
+    &:hover {
+      background: $dark-700;
+    }
+
+    .mat-icon {
+      color: $blue-gray-500;
+      margin-right: 0.25rem;
+    }
+
+    span {
+      color: $blue-gray-500;
+    }
+  }
+}
+
+.example-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cdk-drop-list {
+  width: calc(50% - 5px);
+}
+
+.example-list li {
+  display: table-cell;
+  padding: 4px;
+}
+
+.example-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 980px) {
+  .example-container {
+    flex-direction: column;
+  }
+
+  .cdk-drop-list {
+    width: 100%;
+  }
+}
+
+.example-box {
+  /* width: 50%; */
+  /* width: 200px;
+  height: 200px;
+  border: solid 1px #ccc;
+  font-size: 30pt;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: move;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+  transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12); */
+}
+
+.example-box:active {
+  /* box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  opacity: 0.6; */
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 500px;
+  /* box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); */
+}
+
+.cdk-drag-placeholder {
+  opacity: 0.3;
+  width: calc(50% - 5px);
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.example-box-placeholder {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  background: #ccc;
+  border: dotted 3px #999;
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.drop-list-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-size-sm {
+  font-size: 21px;
+  height: 21px !important;
+  width: 21px !important;
+  line-height: 21px;
+}
+
+.icon-size-xs {
+  font-size: 18px;
+  height: 18px !important;
+  width: 18px !important;
+  line-height: 18px;
+}
+
+.blue-gray-icon-btn {
+  background-color: #fff;
+  padding: 0 15px;
+  height: 34px;
+  line-height: 34px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color $transition-duration;
+
+  .mat-icon {
+    color: $blue-gray-500;
+  }
+
+  &:hover {
+    background-color: $blue-gray-400;
+  }
+}
+
+.panel-body {
+  height: 415px;
+}
+
+.recommendation-item {
+  .button-delete {
+    opacity: 0;
+    transition: $transition-duration opacity;
+  }
+
+  &:hover {
+    .button-delete {
+      opacity: 1;
+    }
+  } 
+}
+
+.graph-legend {
+  overflow: hidden;
+  .graph-legend-content {
+    width: 64px;
+    transition: $transition-duration width;
+    
+    .graph-legend-items {
+      transition: $transition-duration  opacity;
+      opacity: 0;
+    }
+  }
+
+  &:hover {
+    .graph-legend-content {
+      width: 100%;
+      .graph-legend-items {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.action-card-selection {
+  &.disabled {
+    opacity: .5;
+  }
+  &:not(.disabled){
+    cursor: pointer;
+    &:hover {
+      border: 1px solid $blue-500;
+  
+      h2, h4, .mat-icon, .btn-label {
+        color: $blue-500
+      }
+  
+      .action-card-selection-arrow {
+        background-color: $blue-500;
+        .mat-icon {
+          color: #fff
+        }
+      }
+  
+      .action-card-selection-icon {
+        .mat-icon {
+          color: $blue-500
+        }
+      }
+    }
+  
+    .action-card-selection-icon {
+      .mat-icon {
+        font-size: 46px;
+        line-height: 46px;
+        height: 46px;
+        width: 46px;
+      }
+    }
+  }
+}
+
+.action-mat-icon {
+  .mat-icon {
+    font-size: 46px;
+    line-height: 46px;
+    height: 46px;
+    width: 46px;
+  }
+
+  &:hover {
+    background-color: $blue-500;
+    .mat-icon {
+      color: #fff
+    }
+  }
+}
+
+.tab-menu {
+  .active {
+    border-bottom: 1px solid $blue-500;
+  }
+}
+
+.related-link-active {
+  cursor: pointer;
+  transition: $transition-duration stroke;
+  stroke: rgba(74, 118, 251, .05)
+}
+
+div.tooltip, div.venntooltip {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  padding: .75rem;
+  background: #fff;
+  border: 1px solid $blue-gray-300;
+  border-radius: 4px;
+  color: $dark-700;
+  pointer-events: none;
+  box-shadow: 0 10px 8px rgba(51, 57, 87, 0.08), 0 4px 3px rgba(51, 57, 87, 0.2) !important;
+}
+
+.text-link {
+  cursor: pointer;
+  &:hover {
+    color: $blue-500;
+    text-decoration: underline;
+  }
+}
+
+
+.mat-tab-label {
+  padding: 40px !important; 
+  min-width: 0!important;
+
+
+}
+
+.mat-tab-label.mat-tab-label-active {
+  color: #313c4d;
+  min-width: 0!important;
+
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+  background: #313c4d;
+} 
+
+
+.mat-tab-header{
+  box-shadow: 0 -5px 20px -1px rgb(221, 223, 244),
+  0 2px 4px -1px rgb(237, 239, 255);
+}
+
+.mat-tab-body-wrapper{
+  flex-grow: 1;
+}
+
+
+.custom-dialog-container .mat-dialog-container{
+  padding: 0px !important;
+  overflow: hidden !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-start, .mat-form-field-appearance-outline .mat-form-field-outline-end {
+  background-color: #F2F4F8 !important;
+}
+.field-appearance-outline .mat-form-field-outline-thick .mat-form-field-outline-end{
+  background-color: #F2F4F8 !important;
+
+  border-bottom: 1px solid  #C1C7CD !important;
+}
+.input-label{
+  color: #21272A;
+
+/* Body/S */
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 19.6px */
+}
+
+.mat-form-field-outline-start, .mat-form-field-outline-end {
+  border-radius: 0 !important;
+}
+.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
+  opacity: 0 !important; /*click effect color change*/
+  background-color: #0F62FE !important;  }
+  
+  .mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: #0F62FE !important; /*inner circle color change*/  }
+  
+  .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #0F62FE !important; /*outer ring color change*/  }
+
+
+  mat-drawer-container > mat-drawer{
+width: 400px;
+  }
+
+  .mat-expansion-panel:not([class*=mat-elevation-z]) {
+
+    box-shadow: none;
+
+  }
+  .mat-expansion-panel-header {
+    height: fit-content;
+}
+
+.mat-progress-bar-fill::after {
+  background-color: rgb(70, 70, 247);
+}
+// mat-progress-spinner > svg{
+//   width:40px !important;
+//   height:40px !important;
+// }
+// .mat-progress-spinner circle, .mat-spinner circle {
+//   stroke:rgb(70, 70, 247);
+// }
+.mat-progress-spinner svg{
+  width: 30px !important;
+    height: 30px !important;
+    top:9px !important;
+}
+
+.mat-expansion-panel-header{
+height: fit-content !important;
+}

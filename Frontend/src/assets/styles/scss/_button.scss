@@ -1,0 +1,37 @@
+.mat-flat-button,
+.mat-button-wrapper {
+  font-weight: bold;
+}
+
+.mat-flat-button {
+  color: $blue-900;
+  &.mat-success {
+    background-color: $green-300;
+    color: #fff;
+  }
+
+  &.mat-blue-gray {
+    background-color: $blue-gray-400;
+    color: $dark-700;
+  }
+
+  &.mat-blue {
+    background-color: $blue-500;
+    color: #fff;
+  }
+
+  &.mat-danger {
+    background-color: $red-500;
+    color: #fff;
+  }
+
+  &.mat-flat-button-sm {
+    min-width: 34px !important;
+    line-height: 28px !important;
+    padding: 0 8px !important;
+
+    .mat-icon {
+        line-height: 16px;
+    }
+  }
+}

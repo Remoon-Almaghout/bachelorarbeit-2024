@@ -1,0 +1,61 @@
+<div class="relative" id="venn-diagram-container" *ngIf="recommendations">
+  <div class="absolute top-1 left-2 z-9999">
+    <recommendation-selector
+      [recommendations]="recommendations"
+      [selected]="selectedRecommendations"
+      (change)="changeRecommendationSelection($event)"
+      [limit]="1"
+    ></recommendation-selector>
+  </div>
+  <div class="absolute top-1 right-2 z-9999">
+    <mat-icon
+      class="text-dark-700 cursor-pointer"
+      matTooltip="The Venn diagram shows the overlap of topics between user profile and recommendation. Hover over the circles to see which topics have an overlap."
+      >help</mat-icon
+    >
+  </div>
+  <div style="padding-top: 100px">
+    <div class="flex flex-column items-center justify-center">
+      <div class="flex items-center justify-center">
+        <div class="flex items-center">
+          <div class="text-right">
+            <span
+              class="text-dark-700 ellipsis block text-sm"
+              style="width: 160px"
+              >{{ selectedRecommendations[0].title }}</span
+            >
+          </div>
+          <div
+            class="ml-05 rounded-full"
+            style="height: 8px; width: 8px; background: #a3b9fc"
+          ></div>
+          <div
+            style="width: 40px; height: 3px; background-color: #a3b9fc"
+          ></div>
+        </div>
+        <svg id="venn-diagram" height="200"></svg>
+        <div class="flex items-center">
+          <div
+            style="width: 40px; height: 3px; background-color: #acedd9"
+          ></div>
+          <div
+            class="mr-05 rounded-full"
+            style="height: 8px; width: 8px; background-color: #acedd9"
+          ></div>
+          <div class="text-left">
+            <span
+              class="text-dark-700 ellipsis block text-sm"
+              style="width: 160px"
+              >User profile</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <span class="text-4xl text-semi-bold text-dark-700"
+          >{{ percentage }}%</span
+        >
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="relative">
+  <div style="overflow-y: auto" *ngIf="recommendations">
+    <top-k-list-item
+      [recommendation]="recommendation"
+      [index]="index"
+      *ngFor="let recommendation of recommendations; let index = index"
+    ></top-k-list-item>
+  </div>
+</div>

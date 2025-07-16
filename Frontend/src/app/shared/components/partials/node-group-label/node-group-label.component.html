@@ -1,0 +1,26 @@
+<div
+  class="rounded-full px-3"
+  style="padding-top: 0.15rem; padding-bottom: 0.15rem"
+  [class.bg-dark-700]="group === NODE_GROUP.NODE_GROUP_RECOMMENDATION"
+  [class.bg-green-600]="group === NODE_GROUP.NODE_GROUP_COURSE"
+  [class.bg-blue-500]="group === NODE_GROUP.NODE_GROUP_TOPIC"
+  [class.bg-orange-500]="group === NODE_GROUP.NODE_GROUP_EDUCATIONAL_PACKAGE"
+  [class.bg-red-500]="group === NODE_GROUP.NODE_GROUP_OER"
+>
+  <span
+    class="text-xs text-white text-semi-bold ellipsis"
+    style="max-width: 120px"
+  >
+    {{
+      group === NODE_GROUP.NODE_GROUP_RECOMMENDATION
+        ? "Journey"
+        : group === NODE_GROUP.NODE_GROUP_COURSE
+        ? "Course"
+        : group === NODE_GROUP.NODE_GROUP_TOPIC
+        ? "Topic"
+        : group === NODE_GROUP.NODE_GROUP_EDUCATIONAL_PACKAGE
+        ? "Educational Package"
+        : "OER"
+    }}
+  </span>
+</div>

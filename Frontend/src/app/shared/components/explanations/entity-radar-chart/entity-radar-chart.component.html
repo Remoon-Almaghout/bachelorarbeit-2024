@@ -1,0 +1,22 @@
+<div class="relative" id="radar-chart-container" *ngIf="recommendations">
+  <loading class="centered-axis-xy" *ngIf="isLoading"></loading>
+  <div class="absolute top-1 left-2 z-9999">
+    <recommendation-selector
+      [recommendations]="recommendations"
+      [selected]="selectedRecommendations"
+      (change)="changeRecommendationSelection($event)"
+      [limit]="1"
+    ></recommendation-selector>
+  </div>
+  <div class="absolute top-1 right-2 z-9999">
+    <mat-icon
+      class="text-dark-700 cursor-pointer"
+      matTooltip="This radar chart shows you the weighted overlap between user profile and recommendation for certain attributes."
+      >help</mat-icon
+    >
+  </div>
+  <svg id="radar-chart" height="415"></svg>
+  <div class="absolute bottom-2 left-2">
+    <radar-chart-legend [colors]="legendColors"></radar-chart-legend>
+  </div>
+</div>

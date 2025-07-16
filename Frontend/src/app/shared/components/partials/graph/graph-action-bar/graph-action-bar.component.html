@@ -1,0 +1,28 @@
+<div class="graph-action-bar">
+  <div
+    class="mb-025 blue-gray-icon-btn rounded-md border-1 flex items-center justify-center relative"
+    [class.border-blue-400]="isGrabModus"
+    [class.bg-blue-100]="isGrabModus"
+    [class.border-blue-gray-300]="!isGrabModus"
+    (click)="onGrab.emit()"
+    style="z-index: 999"
+  >
+    <mat-icon [class.text-blue-400]="isGrabModus" class="icon-size-xs"
+      >back_hand</mat-icon
+    >
+  </div>
+  <div class="rounded-md border-1 border-blue-gray-300">
+    <div
+      class="blue-gray-icon-btn border-b-1 border-blue-gray-300 flex items-center justify-center"
+      (click)="zoomIn()"
+    >
+      <mat-icon class="icon-size-sm">zoom_in</mat-icon>
+    </div>
+    <div
+      class="blue-gray-icon-btn flex items-center justify-center"
+      (click)="zoomOut()"
+    >
+      <mat-icon class="icon-size-sm">zoom_out</mat-icon>
+    </div>
+  </div>
+</div>

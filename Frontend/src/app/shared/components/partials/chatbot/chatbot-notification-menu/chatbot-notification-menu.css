@@ -1,0 +1,14 @@
+.card-title {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding: 0px;
+}
+
+.notification-body {
+    background-color: #fff; 
+    width: 260px; 
+    height: 100px;
+}

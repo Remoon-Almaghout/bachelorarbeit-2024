@@ -1,0 +1,17 @@
+.welcome-bg{
+    background: linear-gradient(180deg, rgba(49,60,77,1) 0%, rgba(255,255,255,1) 64%, rgba(255,255,255,1) 100%);
+}
+
+.card-title {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding: 0px;
+}
+
+.card-content {
+    color: rgb(115, 115, 115);
+    font-size: 0.80rem;
+}

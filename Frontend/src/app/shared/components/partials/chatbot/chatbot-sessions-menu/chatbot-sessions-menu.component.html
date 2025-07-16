@@ -1,0 +1,66 @@
+<div class="flex flex-column h-full rounded-lg"  >
+    <div class="flex flex-row items-center justify-center px-5 py-4  top-0 left-0 right-0 sticky sessions-header rounded-t-lg">
+        <div class="flex flex-row w-full justify-center">
+            <label class="page-title">Sessions</label>
+        </div>
+        <button 
+        mat-icon-button 
+        style="color:#fff"
+        (click)="close()"
+        >
+            <mat-icon>
+                close
+            </mat-icon>
+        </button>
+
+    </div>
+    <empty 
+    class="centered-axis-xy"
+    [message]="'!Oops, your Sessionlist is Empty'"
+    *ngIf="sessions == null || sessions.length == 0"
+    ></empty>
+    <loading class="centered-axis-xy" *ngIf="isLoading"></loading>
+    <mat-progress-bar 
+    mode="indeterminate"
+    [style.display]="loadingProgressEnable? 'block' : 'none'"
+    ></mat-progress-bar>
+    <mat-list *ngIf="!isLoading" class="w-full pb-15" role="list">
+        <mat-list-item 
+        matRipple 
+        style="height: 7vh;" 
+        role="listitem" 
+        class="cursor-pointer"
+        *ngFor="let session of sessions"
+        (click)="joinSession(session.id)">
+            <div class="flex flex-row gap-2 w-full" >
+                <img [src]="LOGO" alt="..." class="shadow-md rounded-full w-12 h-12  border-none" />
+                <div class="flex flex-row  items-center w-full justify-space-between">
+                    <div class="flex flex-column items-start">
+                        <span class="text-sm font-normal card-title">{{session.last_message_user_name}}: {{session.last_message_type != 'text' ? session.last_message_type : (session.last_message.length > 24) ? session.last_message.substring(0,24)+" ...":session.last_message}}</span>
+                        <span class="text-sm font-normal card-content" >{{session.last_message_created_at}}</span>
+                    </div>
+                    <mat-icon>
+                        keyboard_arrow_right
+                    </mat-icon>
+
+                </div>
+            </div>
+        <mat-divider></mat-divider>
+        </mat-list-item>
+        
+    </mat-list>
+    <div class="flex flex-row justify-center ">
+        <div class="absolute bottom-2 ">
+            <button 
+            mat-raised-button 
+            class="send-btn"
+            (click)="createSession()">
+                🤖 Create new session
+                <mat-icon class="scale-sm">
+                    send
+                </mat-icon>
+            </button>
+        </div>
+    </div>
+
+</div>

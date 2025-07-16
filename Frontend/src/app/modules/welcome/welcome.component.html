@@ -1,0 +1,30 @@
+
+<div style="margin: 2rem auto; width: 1024px;" [ngStyle]="{'min-height' : journeyHistory?.length ? '80vh' : '68vh'}" *ngIf="!isLoading">
+
+  <welcome-action-selection
+    (goNext)="goNext()"
+    [disableJourney]="userProfile.updated_at === null"
+    [journeyHistory]="journeyHistory"
+    *ngIf="step === welcomeStep.WELCOME_STEP_ACTION_SELECTION"
+  ></welcome-action-selection>
+
+  <journey-industry-selection
+    (selectIndustry)="selectIndustry($event)"
+    (goBack)="goBack()"
+    [journies]="journies"
+    *ngIf=" step === welcomeStep.WELCOME_STEP_JOURNEY_INDUSTRY_SELECTION && journies"
+    [searchQueryParam]="searchQueryParam"
+   (customSearchChange)="handleSearchChange($event)"
+  ></journey-industry-selection>
+
+  <journey-selection
+    (goBack)="goBack()"
+    [filteredIndustryJounries]="filteredIndustryJounries"
+    [searchQueryParam]="searchQueryParam"
+    *ngIf="step === welcomeStep.WELCOME_STEP_JOURNEY_SELECTION"
+    [allJourneys]="journies"
+  ></journey-selection>
+
+
+
+</div>

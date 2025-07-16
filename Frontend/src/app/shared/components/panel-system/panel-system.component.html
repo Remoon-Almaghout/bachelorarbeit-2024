@@ -1,0 +1,34 @@
+<div class="panel-system p-3">
+  <div class="example-container" cdkDropListGroup>
+    <ng-container *ngFor="let entry of components; let i = index">
+      <div cdkDropList [cdkDropListData]="i">
+        <div
+          cdkDrag
+          [cdkDragData]="i"
+          (cdkDragEntered)="dragEntered($event)"
+          class="example-box"
+        >
+          <panel>
+            <panel-header
+              [title]="entry.title"
+              (hide)="hide($event)"
+              (reorder)="reorder($event)"
+              [count]="components.length"
+              [index]="i"
+            >
+              <div
+                class="rounded-md border-1 border-blue-gray-300 flex items-center justify-center blue-gray-icon-btn"
+                cdkDragHandle
+              >
+                <mat-icon class="icon-size-sm">drag_indicator</mat-icon>
+              </div>
+            </panel-header>
+            <panel-body>
+              <ng-container *ngComponentOutlet="entry.component"></ng-container>
+            </panel-body>
+          </panel>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+<div class="bg-dark-800" style="height: 58px; background-color: #0F4C75" id="top-bar">
+  <div class="flex justify-space-between items-center h-full" style=" padding:20px;">
+    <div>
+      <ul class="navigation" *ngIf="isLoggedIn">
+        <div class="logo" style="background: white;
+        border-radius: 50%; padding: 0;">
+          <img src="../../../../../assets/images/favicon 1 1.svg" alt="">
+        </div>
+        <li class="navigation-item nav1 " [routerLink]="['/home']">
+          <mat-icon class="icon-size-sm">home</mat-icon>
+          <span class="text-base text-semi-bold">Home</span>
+        </li>
+        <li class="navigation-item nav1" [routerLink]="['/user-profile']" >
+          <mat-icon class="icon-size-sm">account_circle</mat-icon>
+          <!--<i class="pi pi-angle-up" style="color: rgb(240, 240, 244)"></i>-->
+          <span class="text-base text-semi-bold">User Profile</span>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="navigation">
+        <li class="navigation-item" *ngIf="isLoggedIn" (click)="logout()">
+          <mat-icon class="icon-size-sm" style="font-size: x-large;"> logout</mat-icon>
+          <span class="text-base text-semi-bold" style="font-size:small;" >Logout</span>
+        </li>
+        <!-- <li
+          class="navigation-item"
+          *ngIf="!isLoggedIn"
+          [routerLink]="['/login']"
+        >
+          <mat-icon class="icon-size-sm">login</mat-icon>
+          <span class="text-base text-semi-bold">Login</span>
+        </li>
+        <li
+          class="navigation-item"
+          *ngIf="!isLoggedIn"
+          [routerLink]="['/register']"
+        >
+          <mat-icon class="icon-size-sm">person_add</mat-icon>
+          <span class="text-base text-semi-bold">Register</span>
+        </li>-->
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="header-container">
+<div class="logo">
+<img src="../../../../../assets/images/favicon 1 1.svg" alt="">
+</div>
+<div class="navigation">
+  <button class="btn1 login-btn"
+  *ngIf="!isLoggedIn"
+  [routerLink]="['/login']"
+  >
+    Log In
+  <img src="../../../../../assets/images/arrow-right.svg" alt="">
+  </button>
+  <button class="btn1 signUp-btn" 
+  *ngIf="!isLoggedIn"
+  [routerLink]="['/register']" 
+  >
+    Sign Up
+    <img src="../../../../../assets/images/arrow-right1.svg" alt="">
+
+  </button>
+  <button class="btn1 logout-btn"
+  *ngIf="isLoggedIn"
+  (click)="logout()"
+  >
+  Log Out
+  <img src="../../../../../assets/images/heroicons-outline_logout.svg" alt="">
+
+  </button>
+</div>
+</div> -->

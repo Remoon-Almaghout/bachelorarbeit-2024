@@ -1,0 +1,14 @@
+<div>
+  <tab-menu
+    [menu]="menu"
+    [currentSelection]="currentMenuSelection"
+    (onChange)="onChangeMenuSelection($event)"
+  ></tab-menu>
+</div>
+<div class="p-5">
+  <exploration-information-oer
+    [isLoading]="isLoading"
+    [oer]="oer"
+    *ngIf="currentMenuSelection == 'Information'"
+  ></exploration-information-oer>
+</div>

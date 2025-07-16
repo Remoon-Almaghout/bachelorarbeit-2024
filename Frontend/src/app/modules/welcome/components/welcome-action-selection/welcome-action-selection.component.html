@@ -1,0 +1,119 @@
+<div class="mb-8 ">
+  <h2 class="text-blue-900 mt-0 mb-025" style="font-size: 30px;"><strong> Hello, {{userName}}! 👋  </strong> </h2>
+  <p class="text-blue-gray-600 text-base m-0" style="color: rgb(94, 94, 119);">
+    <strong>Consider your options and make a thoughtful decision on the most suitable
+    action to take next</strong>
+  </p>
+</div>
+
+<div class="footer_fix">
+<grid [cols]="3" >
+
+
+   <div class="bg-white rounded-md border-1 border-blue-gray-300 p-5 relative action-card-selection "
+    style="height: 320px" [routerLink]="['/user-profile']">
+    <div class="action-card-selection-icon mb-025">
+      <mat-icon class="text-dark-700">account_circle</mat-icon>
+    </div>
+    <div>
+      <h2 class="text-2xl text-dark-700 text-bold mt-0 mb-05">
+        <strong> Manage your profile</strong>
+      </h2>
+      <p class="text-sm text-dark-700 m-0">
+        Configure your user profile to receive most relevant recommendations
+        <br />
+      </p>
+    </div>
+
+    <div class="absolute" style="right: 1.5rem; bottom: 1.5rem">
+      <div class="rounded-full action-card-selection-arrow bg-blue-gray-400 flex items-center justify-center"
+        style="height: 42px; width: 42px">
+        <mat-icon class="text-dark-700"
+          style="width: 40px; height: 40px; font-size: 40px; line-height: 40px">keyboard_arrow_right</mat-icon>
+      </div>
+    </div>
+  </div>
+
+<div [class.disabled]="userCurrentStep < 2"
+  class="bg-white p-5 border-1 border-blue-gray-300 rounded-md relative action-card-selection" style="height: 320px"
+  (click)="next()">
+  <div class="action-card-selection-icon mb-025">
+    <mat-icon class="text-dark-700">explore</mat-icon>
+  </div>
+  <h2 class="text-2xl text-dark-700 text-bold mt-0 mb-025">
+    <strong>Chosse your journey to learn and for more information.</strong>
+  </h2>
+  <p class="text-sm text-dark-700 m-0">
+    Select this option to start your learning Process 
+  </p>
+
+  <div class="absolute" style="right: 1.5rem; bottom: 1.5rem">
+    <div class="rounded-full action-card-selection-arrow bg-blue-gray-400 flex items-center justify-center"
+      style="height: 42px; width: 42px">
+      <mat-icon class="text-dark-700"
+        style="width: 40px; height: 40px; font-size: 40px; line-height: 40px">keyboard_arrow_right</mat-icon>
+    </div>
+  </div>
+</div>
+
+<div [class.disabled]="userCurrentStep < 3" *ngIf="userCurrentStep < 3"
+    class="bg-white p-5 border-1 border-blue-gray-300 rounded-md relative action-card-selection" style="height: 320px">
+  <div class="action-card-selection-icon mb-025">
+    <mat-icon class="text-dark-700" style="font-size: 45px; line-height: 45px">
+      school_replay
+    </mat-icon>
+  </div>
+  <h2 class="text-2xl text-dark-700 text-bold mt-0 mb-025">
+    <strong>Keep up your previous learning </strong>
+  </h2>
+  <p class="text-sm text-dark-700 m-0">
+   Continue the available learning methods and start your previous journeys
+  </p>
+  <div class="absolute" style="right: 1.5rem; bottom: 1.5rem">
+    <div class="rounded-full action-card-selection-arrow bg-blue-gray-400 flex items-center justify-center"
+      style="height: 42px; width: 42px">
+      <mat-icon class="text-dark-700"
+        style="width: 40px; height: 40px; font-size: 40px; line-height: 40px">keyboard_arrow_right</mat-icon>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="userCurrentStep >= 3"
+    class="bg-white p-5 border-1 border-blue-gray-300 rounded-md relative action-card-selection" style="height: 320px"
+  (click)="next()" routerLink="/diagram" [queryParams]="{journey_id : continueJourneyId}">
+  <div class="action-card-selection-icon mb-025">
+    <mat-icon class="text-dark-700" style="font-size: 45px; line-height: 45px">
+      school_replay
+    </mat-icon>
+  </div>
+  <h2 class="text-2xl text-dark-700 text-bold mt-0 mb-025">
+    <strong>Keep up your previous learning </strong>
+  </h2>
+  <p class="text-sm text-dark-700 m-0">
+   Continue the available learning methods and start your previous journeys
+  </p>
+  <div class="absolute" style="right: 1.5rem; bottom: 1.5rem">
+    <div class="rounded-full action-card-selection-arrow bg-blue-gray-400 flex items-center justify-center"
+      style="height: 42px; width: 42px">
+      <mat-icon class="text-dark-700"
+        style="width: 40px; height: 40px; font-size: 40px; line-height: 40px">keyboard_arrow_right</mat-icon>
+    </div>
+  </div>
+</div>
+  
+</grid>
+<div class="mt-16" *ngIf="journeyHistory.length" >
+  <div class="mb-8">
+    <h2 class="text-blue-900 mt-0 mb-025"><strong>RECENTLY VISITED JOURNIES</strong></h2>
+    <p class="text-blue-gray-600 text-base m-0" style="color: rgb(94, 94, 119);">
+      <strong> Continue the available learning methods and start your previous journeys</strong>
+    </p>
+  </div> 
+  <grid [cols]="5">
+    <journey-history-card (click)="selectJourneyHistory(item)" [journeyHistory]="item"
+      *ngFor="let item of journeyHistory"></journey-history-card>
+  </grid>
+</div>
+</div>
+
+

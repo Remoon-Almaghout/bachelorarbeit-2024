@@ -1,0 +1,103 @@
+<page-top-bar title="Topic"></page-top-bar>
+
+
+<div class="mb-8 welcome-container d-flex flex-column align-items-center justify-content-center position-relative" >
+  <h1 class="mb-0  w-100" style="font-size: 24px;padding-left: 70px;">
+    <div (click)="goBackDiagram()" class="rounded-full action-card-selection-arrow bg-blue-gray-400 flex items-center justify-center" style="cursor:pointer;height: 42px; width: 42px;position: absolute;top: 25%;left: 20px;">
+      <mat-icon role="img" class="mat-icon notranslate text-dark-700 material-icons mat-icon-no-color" 
+          style="width: 40px; height: 40px; font-size: 40px; line-height: 40px;" aria-hidden="true" data-mat-icon-type="font">
+             keyboard_arrow_left
+      </mat-icon>
+    </div>
+    <strong>{{currentTopic?.title}} </strong>
+    <span class="rounded-full bg-blue-500 px-2 py-1"style="color: white;font-size: 14px;">Topic</span>
+  </h1>
+  <p class="text-sm text-dark-700 m-0" *ngIf="currentTopic?.description">
+    <strong> {{ currentTopic?.description }} </strong><br>
+  </p>
+</div>
+
+
+<div class="container-fluid p-0 " >
+  <mat-drawer-container class="example-container">
+
+    <mat-drawer class=" py-5 px-3" mode="side" opened>
+
+      <div class="absolute top-1 right-2 z-9999">
+        <mat-icon class="text-dark-700 cursor-pointer" matTooltip="&#9873; Here are Education Packages related to your chosen topic. Choose an Open Educational Resource from them, please&#9888;. &nbsp;&nbsp;
+           &#10063;This abbreviation [OER] stands for 'Open Education Resources'.&nbsp;&nbsp;
+           &#10063;This abbreviation [EP] stands for 'Education Package' ">help</mat-icon>
+      </div>
+
+
+      <div class="content">
+        <div class="education-package">
+
+          <div class="ed-packages" *ngFor="let ed of educationalPackages">
+            <mat-expansion-panel class="" [expanded]="openPackage === ed.ID ? true : false">
+              <mat-expansion-panel-header>
+                
+                <mat-panel-title>
+
+      
+                  <h4 class="d-flex align-items-center">  
+                    <span class="wrap d-flex">
+                      <span>&#10036;</span>
+                      <strong
+                        (click)="$event.stopPropagation();openExplorationDialog(ed.ID,ed.title,NODE_GROUP.NODE_GROUP_EDUCATIONAL_PACKAGE)">
+                         {{ed?.title || ''}}</strong>
+                    </span>
+                    <span class="rounded-full px-3 ms-2 bg-orange-500"
+                      style="color: white;">EP</span>
+                  </h4>
+
+                </mat-panel-title>
+                <mat-panel-description>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <div class="oer-link" *ngIf="ed?.educational_contents?.length">
+                <div class="link ps-lg-3 ps-2">
+                  <ng-container *ngFor="let oer of ed.educational_contents">
+                    <li
+                      *ngIf="oer.enabled"
+                      class="oer-title ms-4 mb-2  list-unstyled d-flex align-items-center"
+                      [ngClass]="{'active': oer.ID == currentOER?.ID || currentOER?.openOER, 'done-item':  oer.ID == currentOER?.ID}"
+                      (click)="setCurrentOER(oer, ed.ID)">
+                      <strong>{{oer?.title}}</strong>
+                      <span class="oer-tag rounded-full ms-2" [ngClass]="{'bg-red-500': true, 'done': oer.ID == activeOer}">
+                        OER
+                      </span>
+                      <span *ngIf="oer?.completed" class=" d-flex align-items-center ms-5" style="font-size: large; color: green;">
+                        <mat-icon style="color: green;"> <strong>done</strong> </mat-icon>Done
+                      </span>
+                    </li>
+                    <li
+                      *ngIf="!oer.enabled"
+                      class="oer-title ms-4 mb-2 list-unstyled d-flex align-items-center text-muted">
+                      <strong>{{oer?.title}}</strong>
+                      <span class="oer-tag rounded-full ms-2">
+                        OER
+                      </span>
+                    </li>
+                  </ng-container>
+                </div>
+              </div>
+              
+
+
+            </mat-expansion-panel>
+
+          </div>
+        </div>
+      </div>
+
+    </mat-drawer>
+    <mat-drawer-content>
+      <div class="p-4">
+        <app-oer-view [oerInput]="currentOER"
+          (finisheEvent)="finishOER($event)" (goNext)="handleNextClick($event)">
+        </app-oer-view>
+      </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>

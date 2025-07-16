@@ -1,0 +1,54 @@
+
+<div  class="flex flex-column shadow-center mb-2 rounded-lg speech-menu-body">
+    <img [src]="LOGO" class="shadow-lg rounded-full w-10 h-10  border-none  z-99 absolute"  style="margin-top: -20px; right:45%" />
+    <div class="flex flex-row justify-end">
+        <button 
+        mat-button
+        (click)="close()">
+            <mat-icon>
+                close
+            </mat-icon>
+        </button>
+    </div>
+    <div class="flex flex-column h-full items-center justify-center gap-2">
+        <div class="flex flex-column justify-center items-center gap-2 flex-1">
+            <h4 class="m-0">TALK TO DODO</h4>
+            <h6 
+            class="m-0"
+            >
+            You can start talking with me through mic
+            </h6>
+        </div>
+        <mat-divider class="w-full"></mat-divider>
+        <div 
+        *ngIf="!showSpeechControll"
+        class="flex flex-row items-center justify-center w-1-2  flex-1">
+            <button 
+            class="w-full h-1-2 start-btn" 
+            mat-raised-button 
+            (click)="startTTSAndSTT()">Start</button>
+        </div>
+        <div 
+        *ngIf="showSpeechControll"
+        class="flex flex-row justify-center items-center gap-4 flex-1">
+            
+            <button 
+            (click)="resumStopRecognition(startStopRecognition)"
+            mat-icon-button>
+                <mat-icon>{{recognitionIcon}}</mat-icon>
+            </button>
+            <button 
+            (click)="resumStopSpeaking(startStopSpeaking)"
+            mat-icon-button>
+                <mat-icon>{{voiceIcon}}</mat-icon>
+            </button>
+            <mat-form-field class="w-1-4 ">
+                <mat-label>Language</mat-label>
+                <mat-select (selectionChange)="languageChanged($event)" >
+                  <mat-option  value="en-US">English</mat-option>
+                  <mat-option  value="de-DE">German</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+</div>

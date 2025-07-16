@@ -1,0 +1,49 @@
+<div class="top-k-list-item py-3 px-5 border-b-1 border-blue-gray-300">
+  <div class="flex items-center justify-space-between mb-025">
+    <h2
+      class="text-lg text-blue-500 m-0 cursor-pointer"
+      (click)="
+        openExplorationDialog(
+          recommendation.id,
+          recommendation.title,
+          NODE_GROUP.NODE_GROUP_RECOMMENDATION
+        )
+      "
+    >
+      {{ index + 1 }}. {{ recommendation.title }}
+    </h2>
+    <div>
+      <div
+        class="border-1 border-blue-gray-300 rounded-full px-3 py-1 flex items-center"
+      >
+        <mat-icon
+          class="text-blue-gray-600 mr-025"
+          style="font-size: 14px; line-height: 14px; height: 14px; width: 14px"
+          >construction</mat-icon
+        >
+        <span class="text-semi-bold text-blue-gray-600 text-xs">
+          {{ recommendation.industry }}
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-025">
+    <span class="text-bold text-dark-700 text-sm">Coures: </span>
+    <span class="text-dark-700 text-sm">{{ coursesString }}</span>
+  </div>
+  <div class="mb-025">
+    <span class="text-bold text-dark-700 text-sm">Topics: </span>
+    <span class="text-dark-700 text-sm">{{ topicsString }}</span>
+  </div>
+  <div class="mb-025">
+    <span class="text-bold text-dark-700 text-sm">Language: </span>
+    <span class="text-dark-700 text-sm"> {{ recommendation.lang }}</span>
+  </div>
+  <div class="mb-025">
+    <span class="text-bold text-dark-700 text-sm">Description: </span>
+    <span class="text-dark-700 text-sm">{{
+      recommendation.description ? recommendation.description : "-"
+    }}</span>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+<div>
+  <div
+    *ngFor="let selectedItem of selected; let index = index"
+    class="recommendation-item"
+  >
+    <div class="flex items-center">
+      <!-- <span class="text-blue-gray-600 text-bold text-sm mr-025"
+        >{{ index + 1 }}.</span
+      > -->
+      <mat-form-field appearance="outline" class="size-xs">
+        <mat-select
+          [formControl]="$any(itemForm.get('recommendation_' + (index + 1)))"
+        >
+          <mat-option [value]="selectedItem.id">
+            {{ selectedItem.title }}
+          </mat-option>
+          <mat-option
+            *ngFor="let unselectedItem of unselected"
+            [value]="unselectedItem.id"
+          >
+            {{ unselectedItem.title }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div class="button-delete" style="margin-left: 3px" *ngIf="limit > 1">
+        <button
+          mat-flat-button
+          color="danger"
+          class="mat-flat-button-sm"
+          (click)="remove(index)"
+          [disabled]="selected.length === 1"
+        >
+          <mat-icon class="icon-size-xs">delete_outline</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="limit > selected.length" style="margin-top: 1px">
+    <button
+      mat-flat-button
+      color="success"
+      class="mat-flat-button-sm"
+      (click)="add()"
+    >
+      <mat-icon class="icon-size-xs">add</mat-icon>
+    </button>
+  </div>
+</div>

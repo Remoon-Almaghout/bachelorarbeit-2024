@@ -1,0 +1,115 @@
+<div class="flex flex-column">
+  <div
+    class="px-4 py-3 border-b-1 border-blue-gray-300 flex justify-space-between items-center"
+  >
+    <h2 class="text-xl m-0 text-bold text-dark-700">More information</h2>
+
+    <div
+      class="rounded-full action-mat-icon bg-blue-gray-400 flex items-center justify-center cursor-pointer"
+      style="height: 42px; width: 42px"
+      (click)="onClose()"
+    >
+      <mat-icon
+        class="text-dark-700"
+        style="width: 32px; height: 32px; font-size: 32px; line-height: 32px"
+        >clear</mat-icon
+      >
+    </div>
+  </div>
+  <div>
+    <div class="exploration-main">
+      <div class="p-3 border-b-1 border-blue-gray-300">
+        <exploration-breadcrumb
+          [history]="history[history.length - 1]"
+          (goToBreadCrumb)="goToBreadCrumb($event)"
+        ></exploration-breadcrumb>
+      </div>
+      <div class="flex items-center justify-space-between p-5 bg-blue-gray-400">
+        <div>
+          <div
+            class="rounded-full border-1 border-blue-gray-300 px-2 bg-white py-1 mb-025"
+            style="display: inline-block"
+          >
+            <div class="flex">
+              <span class="text-xs">
+                {{
+                  group === NODE_GROUP.NODE_GROUP_RECOMMENDATION
+                    ? "Journey"
+                    : group === NODE_GROUP.NODE_GROUP_COURSE
+                    ? "Course"
+                    : group === NODE_GROUP.NODE_GROUP_TOPIC
+                    ? "Topic"
+                    : group === NODE_GROUP.NODE_GROUP_EDUCATIONAL_PACKAGE
+                    ? "Educational Package"
+                    : "OER"
+                }}
+              </span>
+            </div>
+          </div>
+          <h2 class="text-blue-900" style="margin-top: 0.5rem">
+            {{ title }}
+          </h2>
+        </div>
+        <!-- <div
+          [class.disabled]="history.length === 1"
+          class="py-2 px-5 bg-white rounded-md border-1 border-blue-gray-300 action-card-selection flex items-center"
+          (click)="back()"
+        >
+          <mat-icon>keyboard_arrow_left</mat-icon>
+          <h4 class="text-sm text-dark-700 text-bold m-0">Go Back</h4>
+        </div> -->
+        <button
+        class="btn py-2 px-5 bg-white rounded-md border-1 border-blue-gray-300 action-card-selection flex items-center"
+        (click)="goTo()"
+        [disabled]="!data?.status?.previousCompleted && data?.status"
+        
+      >
+        <mat-icon>keyboard_arrow_left</mat-icon>
+        <h4 class="text-sm text-dark-700 text-bold m-0"> <strong> Go to learn {{
+          group === NODE_GROUP.NODE_GROUP_RECOMMENDATION
+            ? "Journey"
+            : group === NODE_GROUP.NODE_GROUP_COURSE
+            ? "Course"
+            : group === NODE_GROUP.NODE_GROUP_TOPIC
+            ? "Topic"
+            : group === NODE_GROUP.NODE_GROUP_EDUCATIONAL_PACKAGE
+            ? "Educational Package"
+            : "OER"
+        }} </strong> </h4>
+      </button>
+      </div>
+      <exploration-recommendation
+        [recommendation]="recommendation"
+        (select)="select($event)"
+        *ngIf="group === NODE_GROUP.NODE_GROUP_RECOMMENDATION"
+        (onClose)="onClose()"
+      ></exploration-recommendation>
+      <exploration-course
+        [courseId]="id"
+        (select)="select($event)"
+        (onClose)="onClose()"
+        *ngIf="group === NODE_GROUP.NODE_GROUP_COURSE"
+      ></exploration-course>
+      <exploration-topic
+        [topicId]="id"
+        (select)="select($event)"
+        (onClose)="onClose()"
+        *ngIf="group === NODE_GROUP.NODE_GROUP_TOPIC"
+      ></exploration-topic>
+      <exploration-educational-package
+      [parentId]="parentId"
+        [educationalPackageId]="id"
+        (select)="select($event)"
+        (onClose)="onClose()"
+        *ngIf="group === NODE_GROUP.NODE_GROUP_EDUCATIONAL_PACKAGE"
+      ></exploration-educational-package>
+      <exploration-oer
+      [parentId]="parentId"
+        [oerId]="id"
+        (select)="select($event)"
+        (onClose)="onClose()"
+        *ngIf="group === NODE_GROUP.NODE_GROUP_OER"
+      ></exploration-oer>
+    </div>
+  </div>
+</div>

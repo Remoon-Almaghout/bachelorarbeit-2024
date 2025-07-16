@@ -1,0 +1,25 @@
+<page-top-bar title="User Profile"></page-top-bar>
+<div style="margin: 2rem auto; width: 1024px">
+  <div class="flex items-center justify-space-between mb-6">
+
+
+    <div>
+      <mat-icon class="icon-size-sm" style="font-size: 75px;" >account_circle</mat-icon>
+      <h2 class="text-blue-900 mt-0 mb-025" style="font-size: 30px;"><strong> USER PROFILE </strong> </h2>
+      <p class="text-blue-gray-600 text-base m-0" style="color: rgb(94, 94, 119);">
+        <strong>Configure your user profile to receive recommendations that are relevant
+          to you</strong>
+      </p>
+    </div>
+    
+    
+
+  </div>
+  <user-profile-form></user-profile-form>
+
+  <div class="mt-6 flex justify-end">
+    <button mat-flat-button color="success" (click)="submit()">
+      <mat-icon class="icon-size-sm">save</mat-icon>
+      <span> SAVE AND RETURN TO HOME</span>
+    </button>
+  </div>

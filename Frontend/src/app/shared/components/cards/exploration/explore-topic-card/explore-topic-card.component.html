@@ -1,0 +1,26 @@
+<div
+  class="border-1 border-blue-gray-300 p-3 rounded-md action-card-selection flex flex-column justify-space-between h-full"
+  style="box-sizing: border-box"
+  (click)="onSelect($event)"
+>
+  <div class="mb-4">
+    <h4 class="text-dark-700 mt-0">
+      {{ topic.title }}
+    </h4>
+    <p class="text-dark-700 text-sm">
+      {{ topic.description }}
+    </p>
+  </div>
+  <div>
+    <button
+      mat-flat-button
+      color="blue-gray"
+      type="button"
+      class="w-full"
+      (click)="goToProfile.emit()"
+    >
+      <mat-icon class="icon-size-sm">add</mat-icon>
+      <span class="btn-label"> Add to profile </span>
+    </button>
+  </div>
+</div>

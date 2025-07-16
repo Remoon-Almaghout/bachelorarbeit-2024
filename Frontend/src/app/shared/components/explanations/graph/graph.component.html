@@ -1,0 +1,52 @@
+<div
+  style="overflow: hidden; height: 415px"
+  class="relative"
+  id="graph-container"
+  [class.cursor-grab]="isGrabModus"
+  *ngIf="recommendations"
+>
+  <div class="absolute top-1 left-2 z-99">
+    <recommendation-selector
+      [recommendations]="recommendations"
+      [selected]="selectedRecommendations"
+      (change)="changeRecommendationSelection($event)"
+    ></recommendation-selector>
+  </div>
+  <div class="absolute top-1 right-2 z-99">
+    <mat-icon
+      class="text-dark-700 cursor-pointer"
+      matTooltip="The graph shows the relationship between the individual elements. Move the mouse pointer over the nodes or connecting lines to get more information. "
+      >help</mat-icon
+    >
+  </div>
+  <svg
+    class="relative"
+    id="graph"
+    width="2000"
+    height="2000"
+    [style.top.px]="offsetY"
+    [style.left.px]="offsetX"
+    [style.transform]="scale"
+  ></svg>
+  <div
+    class="absolute top-0"
+    style="height: 415px; z-index: 99"
+    [ngStyle]="{ width: isGrabModus ? '100%' : '0%' }"
+    (mouseup)="onMouseUp()"
+    (mousedown)="onMouseDown($event)"
+    (mousemove)="onMouseMove($event)"
+    (click)="onMouseUp()"
+    id="grab-overlay"
+    *ngIf="isGrabModus"
+  ></div>
+  <div class="absolute bottom-2 left-2">
+    <graph-legend></graph-legend>
+  </div>
+  <div class="absolute bottom-2 right-2">
+    <graph-action-bar
+      (onScale)="onScale($event)"
+      (onGrab)="onGrab()"
+      [isGrabModus]="isGrabModus"
+    ></graph-action-bar>
+  </div>
+</div>

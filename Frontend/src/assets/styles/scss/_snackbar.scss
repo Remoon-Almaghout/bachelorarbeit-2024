@@ -1,0 +1,47 @@
+.snackbar-wrap {
+    position: fixed;
+    top: 83px;
+    right: 25px;
+    padding: 20px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+  
+    .mat-icon {
+      font-size: 21px;
+      width: 21px;
+      height: 21px;
+      margin-right: 0.5rem;
+    }
+  
+    &.info {
+      background: $blue-400;
+      color: white;
+    }
+  
+    &.success {
+      background: $green-300;
+      color: white;
+    }
+  
+    &.danger {
+      background: $red-500;
+      color: white;
+    }
+  
+    .snackbar-text {
+      text-align: center;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 959px) {
+    .snackbar-wrap {
+      left: 0;
+      right: 0;
+      margin: 0 1rem;
+    }
+  }
+  

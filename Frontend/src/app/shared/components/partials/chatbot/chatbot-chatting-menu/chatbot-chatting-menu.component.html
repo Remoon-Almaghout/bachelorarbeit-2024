@@ -1,0 +1,254 @@
+<div class="flex flex-column h-full relative" >
+    <div class="flex flex-row items-center h-20 rounded-b-2xl rounded-t-lg px-4 py-2 justify-space-between shadow-md" style="background-color: #313c4d;">
+        <div class="flex flex-row gap-2 items-center">
+            <button 
+            mat-icon-button 
+            style="color:#fff"
+            (click)="onChange.emit({selected_page : 'start'})"
+            >
+                <mat-icon>
+                    keyboard_arrow_left
+                </mat-icon>
+            </button>
+            <img [src]="LOGO" alt="..." class="shadow rounded-full w-12 h-12  border-none" />
+            <div class="flex flex-column justify-center mt-2">
+                <h4 class="m-0 white">DoDo the chatbot</h4>
+            </div>
+
+        </div>
+        <div class="flex flex-row">
+            <button 
+            mat-icon-button 
+            style="color:#fff"
+            (click)="leaveSession()"
+            *ngIf="!ownSession"
+            >
+                <mat-icon>
+                    exit_to_app
+                </mat-icon>
+            </button>
+            <button 
+            mat-icon-button 
+            style="color:#fff"
+            (click)="close()"
+            >
+                <mat-icon>
+                    close
+                </mat-icon>
+            </button>
+        </div>
+
+    </div>
+    <loading class="centered-axis-xy" *ngIf="isLoading"></loading>
+
+    <mat-list  id="messagesList" class="h-full overflow-y-auto list-columns-reverse pb-8" role="list"  >
+        <mat-list-item 
+        class="list-item-body"  
+        role="listitem"
+        *ngFor="let message of messages">
+            <div 
+            class="flex flex-row w-full justify-start"
+            *ngIf="message.type == 'invite' &&  message.user == 'bot'">
+                <img [src]="LOGO" class="shadow-md rounded-full w-10 h-10  border-none shadow-md z-99" />
+                <div class="flex flex-column ">
+                    <label class="text-1sm text-normal ml-1 text-bold">{{message.user_name}}</label>
+                    <div class="rounded-lg  bg-gray invite-message-body" >
+                        <p class="text-sm text-normal px-4" >{{message.content}}</p>
+                        <div class="flex flex-column w-full  rounded-b-lg bg-white" >
+                            <button 
+                            mat-button
+                            *ngFor="let option of message.options"
+                            (click)="sendInvite(option)">
+                                <mat-icon>
+                                    supervised_user_circle
+                                </mat-icon>
+                                invite expert in {{option}}
+                            </button>
+                        </div>
+                    </div>
+                    <label class="text-2xs">{{message.created_at}}</label>
+                </div>
+            </div>
+            <div 
+            class="flex flex-row w-full justify-start"
+            *ngIf="message.type == 'text' &&  (message.user == 'bot' || message.user == 'user')">
+                <img [src]="message.user == 'bot' ? LOGO : userImg2" class=" shadow-md rounded-full w-10 h-10  border-none  z-99 "  />
+                <div class="flex flex-column ">
+                    <label class="text-1sm text-normal ml-1 text-bold">{{message.user_name}}</label>
+                    <p class="rounded-lg p-4 bg-blue-gray-400 text-sm text-normal bot-message-body whitespace-pre-wrap" >
+                        {{message.content}}
+                    </p>
+                    <label class="text-2xs">{{message.created_at}}</label>
+                </div>
+            </div>
+            <div 
+            class="flex flex-row w-full justify-end"
+            *ngIf="message.type == 'text' && message.user == 'me'">
+                <div class="flex flex-column items-end">
+                    <p class="rounded-lg p-4 bg-blue-gray-400 text-sm text-normal user-message-body whitespace-pre-wrap">{{message.content}}</p>
+                    <label class="text-2xs">{{message.created_at}}</label>
+                </div>
+                <img [src]="userImg" class="shadow-md rounded-full w-10 h-10  border-none z-99" />
+            </div>
+            <div 
+            class="flex flex-row w-full justify-start"
+            *ngIf="message.type == 'doc' &&  (message.user == 'bot' || message.user == 'user')">
+                <img [src]="message.user == 'bot' ? LOGO : userImg2" class=" shadow-md rounded-full w-10 h-10  border-none  z-99 "  />
+                <div class="flex flex-column ">
+                    <div class="flex flex-row items-center gap-2 rounded-lg p-4 bg-blue-gray-400  text-normal bot-message-body doc-margin-top">
+                        <mat-icon> insert_drive_file</mat-icon>
+                        <div class="flex flex-column">
+                            <label>{{message.file_info.name}}</label>
+                            <label class="text-2sm">{{message.file_info.type}} file</label>
+                        </div>
+                        <button
+                        mat-icon-button 
+                        (click)="downloadFile(message.content)"
+                        >
+                            <mat-icon>cloud_download</mat-icon>
+                        </button>
+                    </div>
+                    <label class="text-2xs">{{message.created_at}}</label>
+                </div>
+            </div>
+            <div 
+            class="flex flex-row w-full justify-end"
+            *ngIf="message.type == 'doc' && message.user == 'me'">
+                <div class="flex flex-column items-end">
+                    <div class="flex flex-row items-center gap-2 rounded-lg p-4 bg-blue-gray-400  text-normal user-message-body">
+                        <mat-icon> insert_drive_file</mat-icon>
+                        <div class="flex flex-column">
+                            <label>{{message.file_info.name}}</label>
+                            <label class="text-2sm">{{message.file_info.type}} file</label>
+                        </div>
+                        <button
+                        mat-icon-button 
+                        (click)="downloadFile(message.content)"
+                        >
+                            <mat-icon>cloud_download</mat-icon>
+                        </button>
+                    </div>
+                    <label class="text-2xs">{{message.created_at}}</label>
+                </div>
+                <img [src]="userImg" class="shadow-md rounded-full w-10 h-10  border-none z-99" />
+            </div>
+            <div 
+            class="flex flex-row w-full justify-end"
+            *ngIf="message.type == 'image' && message.user == 'me'">
+                <div class="flex flex-column items-end">
+                    <div class="flex flex-row justify-end rounded-lg p-2  user-message-body">
+                        <img 
+                        class="w-full" 
+                        src={{imageBaseUrl+message.content}}
+                        (click)="viewImage($event)" >
+                    </div>
+                    <label class="text-2xs">{{message.created_at}}</label>
+                </div>
+                <img [src]="userImg" class="shadow-md rounded-full w-10 h-10  border-none z-99" />
+            </div>
+            <div 
+            class="flex flex-row w-full justify-start"
+            *ngIf="message.type == 'image' &&  (message.user == 'bot' || message.user == 'user')">
+                <img [src]="message.user == 'bot' ? LOGO : userImg2" class="shadow-md rounded-full w-10 h-10  border-none shadow-md z-99" />
+                <div class="flex flex-column ">
+                    <label class="text-1sm text-normal ml-1 text-bold">{{message.user_name}}</label>
+                    <div class="flex flex-row justify-start rounded-lg p-2  bot-message-body">
+                        <img 
+                        class="w-full" 
+                        src={{imageBaseUrl+message.content}}
+                        (click)="viewImage($event)" >
+                    </div>
+                    <label class="text-2xs">{{message.created_at}}</label>
+                </div>
+            </div>
+            <div 
+            class="flex flex-row w-full justify-center"
+            *ngIf="message.type == 'info'">
+                <p class="text-sm text-normal">{{message.content}}</p>
+            </div>      
+        </mat-list-item>
+    </mat-list>
+    <div 
+    class="flex flex-row justify-center "
+    [style.visibility]="(typingStatus != null && typingStatus.status == 'typing')?'visible':'hidden'"
+    >
+        <div class="absolute rounded-md typing-notification-container p-2">
+            <label class="font-medium">{{typingStatus?typingStatus.user_name:''}} is typing...</label>
+        </div>
+    </div>
+    <div 
+    class="flex flex-row items-center h-5 border-t-1 rounded-t-xl px-2 py-7 shadow-top-md border-blue-gray-500"
+    style="padding-left: 0 !important;">
+        <input type="file" class="dnone"
+       [accept]="acceptedFileTypes"
+       (change)="onFileSelected($event)" #fileUpload>
+       <!-- <button 
+       mat-icon-button 
+       (click)="showHideSpeechMenu.emit()"
+       >
+           <mat-icon>
+               volume_up
+           </mat-icon>
+       </button> -->
+        <button 
+        mat-icon-button 
+        (click)="fileUpload.click()"
+        >
+            <mat-icon>
+                file_upload
+            </mat-icon>
+        </button>
+        <mat-form-field class="flex-1 w-10">
+            <mat-label>Type a message</mat-label>
+            <div matPrefix  
+            class="flex flex-row items-center bg-blue-gray-400 rounded-lg"
+            *ngIf="!hideTag"
+            style="padding: 3px;">
+                <span class="text-2sm">DoDo</span>
+                <button 
+                mat-icon-button
+                (click)="hideTag=true"
+                >
+                    <mat-icon>close</mat-icon>
+                </button>
+            </div>
+            <input 
+            #messageInput 
+            matInput type="text" 
+            [(ngModel)]="messageInputFieldValue"
+            (focus)="onFocus()"
+            (blur)="onBlur()"
+            (keyup.enter)="onEnterClicked(messageInput)"
+            (input)="onMessageInputChange($event)" >
+            <button *ngIf="messageInputFieldValue" matSuffix mat-icon-button aria-label="Clear" (click)="messageInputFieldValue=''">
+              <mat-icon>close</mat-icon>
+            </button>
+        </mat-form-field>
+        <button 
+        mat-icon-button 
+        (click)="showEmojiMenu()">
+            <mat-icon>
+                sentiment_very_satisfied
+            </mat-icon>
+        </button>
+        <button 
+        mat-mini-fab 
+        class="send-btn"
+        (click)="sendMessage(messageInput.value)">
+            <mat-icon>send</mat-icon>
+        </button>
+
+    </div>
+    <mat-progress-bar 
+    mode="indeterminate"
+    [style.display]="isStillFileUploading? 'block' : 'none'"
+    ></mat-progress-bar>
+    <emoji-mart 
+    class="emojie-style emoji-mart" 
+    set="twitter"  
+    *ngIf="showEmojiPicker" 
+    (emojiSelect)="addEmoji($event)"  
+    title="Pick your emoji…"
+    [darkMode]="false" >
+    </emoji-mart>
+</div>

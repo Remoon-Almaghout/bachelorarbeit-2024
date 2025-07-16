@@ -1,0 +1,9 @@
+<app-top-bar *ngIf="showBar"></app-top-bar>
+<router-outlet></router-outlet>
+<snackbar ></snackbar>
+<app-footer  *ngIf="showBar"></app-footer>
+
+<div class="loading-overlay" *ngIf="loading">
+    <span class="loader"></span>
+    <p>Processing your request ....</p>
+</div>

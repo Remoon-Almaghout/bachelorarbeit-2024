@@ -1,0 +1,26 @@
+<div>
+  <tab-menu
+    [menu]="menu"
+    [currentSelection]="currentMenuSelection"
+    (onChange)="onChangeMenuSelection($event)"
+  ></tab-menu>
+</div>
+<div class="p-5">
+  <exploration-information-course
+    [isLoading]="isLoading"
+    [course]="course"
+    *ngIf="currentMenuSelection == 'Information'"
+  ></exploration-information-course>
+  <exploration-topics
+    (select)="select.emit($event)"
+    [course]="course"
+    *ngIf="currentMenuSelection == 'Topics'"
+  ></exploration-topics>
+  <explore-more-courses
+    (goToRelated)="goToRelated($event)"
+    [course]="course"
+    (onClose)="onClose.emit()"
+    *ngIf="currentMenuSelection == 'Explore more'"
+  >
+  </explore-more-courses>
+</div>

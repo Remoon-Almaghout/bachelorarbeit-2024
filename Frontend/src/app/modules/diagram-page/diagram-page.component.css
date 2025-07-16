@@ -1,0 +1,175 @@
+
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set box-sizing to border-box for easier layout */
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Container styling */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header styling */
+.header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.134);
+  display: flex;
+  align-items: center;
+}
+
+/* Mat form field styling */
+mat-form-field {
+  margin-right: 20px;
+  font-size: smaller;
+}
+
+/* Buttons styling */
+.buttons {
+  margin-left: auto;
+  padding: 0 5px;
+  font-size: small;
+  color: rgb(130, 136, 136);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Rounded buttons styling */
+.rounded-md {
+  border-radius: 5px;
+  border: 1px solid #bbc7eb; /* Set your preferred border color */
+}
+
+/* Flex container styling for buttons */
+.d-flex {
+  display: flex;
+}
+
+/* Mat icon styling */
+mat-icon {
+  font-size: 20px;
+}
+
+/* Mat expansion panel styling */
+mat-expansion-panel {
+  margin-top: 20px;
+}
+
+/* Mat panel title styling */
+mat-panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Circle progress styling */
+.circle-prog {
+  display: flex;
+  align-items: center;
+}
+
+/* Mat progress spinner styling */
+mat-progress-spinner {
+  width: 45px;
+  height: 45px;
+}
+
+/* Journey styling */
+.journey {
+  font-size: 21px;
+  cursor: pointer;
+  margin: 0;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Program styling */
+.prog {
+  font-size: small;
+  margin-top: 0;
+}
+
+/* Course styling */
+.course {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Progress course styling */
+.prog-course {
+  font-size: small;
+  margin-top: 0;
+}
+
+/* Topics styling */
+.topics {
+  margin-top: 20px;
+}
+
+/* Topic styling */
+.topic {
+  margin: 4px 0;
+}
+
+/* Topic title styling */
+.para {
+  font-size: 16px;
+}
+
+/* Card body styling */
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Button styling */
+.btn-outline-primary {
+  font-size: 13px;
+  border: 1px solid #007BFF; /* Set your preferred border color */
+  background-color: #007BFF ;
+  color: #e5ecf3; /* Set your preferred text color */
+}
+
+/* Tooltip styling */
+.text-dark-700 {
+  cursor: pointer;
+}
+
+/* Absolute positioning styling */
+.absolute {
+  position: absolute;
+  top: 1px;
+  right: 2px;
+  z-index: 9999;
+}
+
+.topic .active{
+  background-color: #FFF3CF;
+}
+
+.large-container{
+  max-width: 1600px;
+}
+
+.loader-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}

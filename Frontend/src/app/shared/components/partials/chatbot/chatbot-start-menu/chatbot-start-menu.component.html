@@ -1,0 +1,44 @@
+<mat-tab-group  
+mat-stretch-tabs=true 
+mat-align-tabs="center" 
+headerPosition="below" 
+class="h-full" 
+[selectedIndex]="selectedTabIndex"
+(selectedTabChange)="onTabChange($event)" >
+    <mat-tab style="width:10px">
+        <ng-template  mat-tab-label  >
+            <div class="flex flex-column justify-center items-center"  >
+                <mat-icon  style="padding-bottom: 5px;">home</mat-icon>
+                <label>Home</label>
+            </div>
+        </ng-template>
+        <chatbot-welcome-menu
+        (onMenuChange)="onMenuChange.emit($event)"
+        (onTabSelected)="tabChange($event)"
+        (onClose)="onClose.emit()"
+        [expert]="expert"></chatbot-welcome-menu>
+    
+    </mat-tab>
+    <mat-tab >
+        <ng-template mat-tab-label>
+            <div class="flex flex-column justify-center items-center">
+                <mat-icon style="padding-bottom: 5px;">messages</mat-icon>
+                <label>Sessions</label>
+            </div>
+        </ng-template>
+        <chatbot-sessions-menu
+        (onMenuChange)="onMenuChange.emit($event)"
+        (onClose)="onClose.emit()"></chatbot-sessions-menu>
+    </mat-tab>
+    <mat-tab *ngIf="expert">
+        <ng-template mat-tab-label>
+            <div class="flex flex-column justify-center items-center">
+                <mat-icon style="padding-bottom: 5px;">group_add</mat-icon>
+                <label>Requests</label>
+            </div>
+        </ng-template>
+        <chatbot-requests-menu
+        (onMenuChange)="onMenuChange.emit($event)"
+        (onClose)="onClose.emit()"></chatbot-requests-menu>
+    </mat-tab>
+</mat-tab-group>

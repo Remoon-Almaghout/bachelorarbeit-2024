@@ -1,0 +1,205 @@
+.mat-elevation-z4 {
+  box-shadow: 0 10px 8px rgba(51, 57, 87, 0.08), 0 4px 3px rgba(51, 57, 87, 0.2) !important;
+}
+
+.mat-menu-content {
+  padding: 0 !important;
+}
+
+.mat-slide-toggle-bar {
+  background-color: $blue-gray-500;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+  background-color: $blue-500;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+  background-color: $blue-400;
+}
+
+.mat-slide-toggle.mat-checked .mat-ripple-element {
+  background-color: $blue-500;
+}
+
+.mat-radio-button {
+  margin-right: 1.5rem;
+}
+
+.mat-radio-outer-circle {
+  border-color: rgb(198, 203, 219);
+}
+
+.mat-radio-button.mat-primary .mat-radio-inner-circle,
+.mat-radio-button.mat-primary
+  .mat-radio-ripple
+  .mat-ripple-element:not(.mat-radio-persistent-ripple),
+.mat-radio-button.mat-primary.mat-radio-checked .mat-radio-persistent-ripple,
+.mat-radio-button.mat-primary:active .mat-radio-persistent-ripple {
+  background-color: $blue-500;
+}
+
+.mat-radio-button.mat-primary.mat-radio-checked .mat-radio-outer-circle {
+  border-color: $blue-500;
+}
+
+.mat-radio-button.mat-primary.mat-radio-checked .mat-radio-replacement-label {
+  color: $blue-500;
+}
+
+.mat-form-field-label {
+  color: $blue-gray-500;
+}
+
+.mat-input-element {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: $blue-gray-500;
+}
+
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: $blue-500;
+}
+
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: $blue-500;
+}
+
+.form-field-no-spacing {
+  .mat-form-field-wrapper {
+    padding-bottom: 0;
+  }
+}
+
+.mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 0.5em 0 0.75em 0;
+}
+
+.mat-chip.mat-standard-chip {
+  background-color: $blue-200;
+  color: $blue-500;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.mat-chip.mat-standard-chip::after {
+  background: #fff;
+}
+
+.mat-chip.mat-standard-chip .mat-chip-remove {
+  color: $blue-500;
+}
+
+.mat-option-text {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: $blue-900;
+}
+
+.mat-option {
+  line-height: 42px !important;
+  height: 42px !important;
+}
+
+.mat-option:hover:not(.mat-option-disabled),
+.mat-option:focus:not(.mat-option-disabled) {
+  background: $blue-200;
+}
+
+.mat-option.mat-selected:not(.mat-option-multiple):not(.mat-option-disabled) {
+  background: $blue-200;
+}
+
+input::placeholder, textarea::placeholder  {
+  color: $blue-gray-500 !important;
+}
+
+.mat-autocomplete-panel:not([class*="mat-elevation-z"]) {
+  box-shadow: 0 10px 8px rgba(51, 57, 87, 0.08), 0 4px 3px rgba(51, 57, 87, 0.2) !important;
+}
+
+.mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick {
+  color: $red-500;
+}
+
+.mat-error {
+  color: $red-500;
+}
+
+.cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+  opacity: .85;
+  background: rgba(244, 247, 253, 1)
+}
+
+.loading-panel {
+  
+  .mat-dialog-container {
+    border-radius: 4px;
+    box-shadow: none !important;
+    padding: 21px;
+    border: 1px solid $blue-gray-300
+  }
+}
+
+.mat-form-field  {
+  &.size-xs {
+    .mat-form-field-wrapper {
+      padding: 0 !important;
+      background: #fff;
+
+      .mat-form-field-infix {
+        padding: 0.75em 0 0.5em 0 !important;
+        width: 160px !important;
+        border-top: 0 !important
+      }
+
+      .mat-select-arrow-wrapper {
+        transform: translateY(0%) !important;
+      }
+
+      .mat-select-value-text {
+        color: $blue-900;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        font-weight: bold;
+      }
+    }
+  }
+ 
+}
+
+.no-spacing .mat-dialog-container {
+  padding: 0;
+
+  .mat-dialog-content {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.mat-dialog-container {
+  box-shadow: 0 10px 8px rgba(51, 57, 87, 0.08), 0 4px 3px rgba(51, 57, 87, 0.2) !important;
+}
+
+.mat-tooltip {
+  padding: .75rem;
+  background: #fff;
+  border: 1px solid $blue-gray-300;
+  border-radius: 4px;
+  color: $dark-700 !important;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  pointer-events: none;
+  box-shadow: 0 10px 8px rgba(51, 57, 87, 0.08), 0 4px 3px rgba(51, 57, 87, 0.2) !important;
+}
+
+.mat-tree-node {
+  border-bottom: 1px solid #F1F1F4;
+}
+
+.mat-dialog-container {
+  z-index: 9999999;
+}

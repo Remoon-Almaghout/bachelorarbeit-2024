@@ -1,0 +1,90 @@
+<div class="mb-8 " >
+
+  <div class="flex items-start " style="gap: 20px;">
+
+    <div class="rounded-full action-mat-icon bg-blue-gray-400 flex items-center justify-center cursor-pointer"
+      style="height: 42px; width: 42px" (click)="goBack.emit()">
+      <mat-icon class="text-dark-700"
+        style="width: 40px; height: 40px; font-size: 40px; line-height: 40px">keyboard_arrow_left</mat-icon>
+    </div>
+
+  </div>
+
+  <div class="flex items-start mt-3">
+
+    <div *ngIf="!searchQueryParam">
+      <h2 class="text-blue-900 mt-0 mb-025"><strong>CHOOSE YOUR <span style="color: #0d6efd; font-size: larger;">
+            INDUSTRY  </span>: </strong></h2>
+      <p class="text-blue-gray-600 text-base m-0" style="color: rgb(94, 94, 119);">
+        <strong>Consider your options and make a thoughtful decision on the most
+          suitable action to take next</strong>
+      </p>
+    </div>
+
+    <div *ngIf="searchQueryParam">
+      <h2 class="text-blue-900 mt-0 mb-025"><strong>OUR RECOMMENDATION SYSTEM HAS SUGGESTED THE FOLLOWING AS THE BEST
+          OPTION FOR YOUR SEARCH ' <span style="color: #0d6efd; font-size: larger"> {{ searchQueryParam }} </span> ' .</strong></h2>
+      <p class="text-blue-gray-600 text-base m-0" style="color: rgb(94, 94, 119);">
+        <strong>Choose your industry, understand our recommendation, and commence your learning goal.</strong>
+      </p>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<grid [cols]="5">
+  <industry-card [industry]="industry" *ngFor="let industry of industries"
+    (click)="selectIndustry.emit(industry)"></industry-card>
+</grid>
+
+<br>
+<br>
+<br>
+
+<div class="mb-8">
+  <div class="flex items-start justify-space-between">
+
+    <div *ngIf="!searchQueryParam">
+      <h2 class="text-blue-900 mt-0 mb-025"><strong>IF YOU'RE LOOKING FOR <span
+            style="color: #0d6efd; font-size: larger;">A SPECIFIC LEARNING GOAL</span> , WE'LL RECOMMEND SUITABLE JOURNEYS
+          FOR YOU.</strong></h2>
+      <p class="text-blue-gray-600 text-base m-0" style="color: rgb(94, 94, 119);">
+        <strong>Write what's on your mind in the field and click 'Recommend me' please. We will recommend the best for
+          you.
+        </strong>
+      </p>
+    </div>
+
+    <div *ngIf="searchQueryParam">
+      <h2 class="text-blue-900 mt-0 mb-025"><strong>IF YOU HAVEN'T FOUND WHAT YOU'RE LOOKING FOR, PLEASE TRY REWRITING
+          <span style="color: #0d6efd; font-size: larger;"> THE INDUSTRY</span>
+          MORE THOROUGHLY AND CLEARLY.</strong></h2>
+      <p class="text-blue-gray-600 text-base m-0" style="color: rgb(94, 94, 119);">
+        <strong>Write down your thoughts in the field and click 'Recommend me again,' please. We will suggest the best
+          journeys based on what you write.
+        </strong>
+      </p>
+    </div>
+
+
+  </div>
+  <br>
+  <div>
+    <mat-form-field class="w-full form-field-no-spacing" appearance="outline">
+      <input matInput placeholder="Write what's on your mind in the field ..." [formControl]="searchFormControl"
+        [matAutocomplete]="autoJournies" #searchInput />
+      <mat-autocomplete autoActiveFirstOption #autoJournies="matAutocomplete">
+        <mat-option *ngFor="let option of filteredSearchOptions | async" [value]="option.title">
+          {{ option.title }}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </div>
+  <br>
+  <button type="button" class="btn btn-outline-primary" (click)="searchIndustries(searchInput.value)">{{searchQueryParam
+    ? 'Recommend me again' : 'Recommend me'}}</button>
+
+</div>

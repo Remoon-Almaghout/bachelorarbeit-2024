@@ -1,0 +1,46 @@
+<form #form="ngForm" [formGroup]="itemForm" (ngSubmit)="onSubmit()">
+  <div
+    class="rounded-md p-3 bg-red-200 mb-4 text-base text-center"
+    *ngIf="hasError"
+  >
+    <p class="text-red-500">
+      An error has occurred. Please fill in all required fields
+    </p>
+  </div>
+  <span class="input-label">Email</span>
+  <mat-form-field class="w-full" appearance="outline"  >
+    <input
+  
+      matInput
+      placeholder="Example@gmail.com"
+      [formControl]="$any(itemForm.get('email'))"
+    />
+    <mat-error *ngIf="errors.hasOwnProperty('email')">
+      {{ errors["email"] }}
+    </mat-error>
+  </mat-form-field>
+  <span class="input-label">Password</span>
+  <mat-form-field class="w-full mb-0 pb-0" appearance="outline">
+    <input
+      matInput
+      [type]="showPassword ? 'text' : 'password'"
+      placeholder="***********"
+      [formControl]="$any(itemForm.get('password'))"
+    />
+    <mat-icon matSuffix (click)="togglePasswordVisibility()"> 
+      {{showPassword?'visibility':'visibility_off'}}</mat-icon>
+    <mat-error *ngIf="errors.hasOwnProperty('password')">
+      {{ errors["password"] }}
+    </mat-error>
+  </mat-form-field>
+  <!-- <div class="d-flex align-items-center justify-content-between my-2">
+    <mat-checkbox >Remember me</mat-checkbox>
+    <span style="cursor: pointer;">Forgot Password?</span>
+  </div> -->
+  <div class="flex justify-end">
+    <button mat-flat-button class="w-100 py-1 my-1" style="background-color: #0F62FE; color:white;  border-radius:0;"  type="submit">
+      <span> Log in </span>
+    </button>
+  </div>
+
+</form>

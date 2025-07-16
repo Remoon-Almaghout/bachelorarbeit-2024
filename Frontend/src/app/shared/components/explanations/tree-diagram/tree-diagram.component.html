@@ -1,0 +1,35 @@
+<div class="overflow-y-auto" style="height: 415px">
+  <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+    <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+      <button mat-icon-button disabled></button>
+      <span
+        class="text-dark-700 text-bold text-sm text-link mr-05"
+        (click)="openExplorationDialog(node,node.id, node.name, node.group,node.parentId)"
+      >
+        {{ node.name }}
+      </span>
+      <node-group-label [group]="node.group"></node-group-label>
+    </mat-tree-node>
+    <mat-tree-node
+      *matTreeNodeDef="let node; when: hasChild"
+      matTreeNodePadding
+    >
+      <button
+        mat-icon-button
+        matTreeNodeToggle
+        [attr.aria-label]="'Toggle ' + node.name"
+      >
+        <mat-icon class="mat-icon-rtl-mirror">
+          {{ treeControl.isExpanded(node) ? "expand_more" : "chevron_right" }}
+        </mat-icon>
+      </button>
+      <span
+        class="text-dark-700 text-bold text-sm text-link mr-05"
+        (click)="openExplorationDialog(node,node.id, node.name, node.group,node.parentId)"
+      >
+        {{ node.name }}
+      </span>
+      <node-group-label [group]="node.group"></node-group-label>
+    </mat-tree-node>
+  </mat-tree>
+</div>

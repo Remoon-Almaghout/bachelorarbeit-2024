@@ -1,0 +1,16 @@
+<loading class="centered-axis-xy" *ngIf="isLoading"></loading>
+<div *ngIf="!isLoading">
+  <div class="flex items-center justify-space-between mb-4">
+    <h3 class="text-blue-900 mt-0">Educational packages</h3>
+    <p class="text-blue-900 mt-0 text-sm text-semi-bold">
+      Amount: {{ educationalPackages.length }}
+    </p>
+  </div>
+  <grid [cols]="3">
+    <educational-package-card
+      [educationalPackage]="educationalPackage"
+      *ngFor="let educationalPackage of educationalPackages"
+      (click)="onClick(educationalPackage)"
+    ></educational-package-card>
+  </grid>
+</div>

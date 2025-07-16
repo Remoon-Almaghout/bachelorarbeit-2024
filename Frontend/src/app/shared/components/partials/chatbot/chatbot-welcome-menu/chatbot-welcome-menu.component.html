@@ -1,0 +1,79 @@
+<div class="flex flex-column h-full rounded-lg welcome-bg"  >
+    <mat-progress-bar 
+    mode="indeterminate"
+    [style.display]="loadingProgressEnable? 'block' : 'none'"
+    ></mat-progress-bar>
+    <div class="flex flex-row items-center px-5 py-4 justify-end">
+        <button 
+        mat-icon-button 
+        style="color:#fff"
+        (click)="close()"
+        >
+            <mat-icon>
+                close
+            </mat-icon>
+        </button>
+    </div>
+    <div class="flex flex-column justify-center items-center">
+        <img [src]="LOGO" alt="..." class="shadow-md rounded-full w-20 h-20  border-none" />
+        <h2  class="text-center" style="color:#fff;">Hello, {{userName}} 👋 <br> How can i help you today?</h2>
+    </div>
+    <div class="flex flex-column justify-center items-center gap-2 ">
+        <div class="w-80 h-12 p-4 rounded-lg shadow-md cursor-pointer" 
+            style="background-color: #fff;"
+            matRipple
+            (click)="createSession()">
+            <div class="flex flex-row justify-space-between items-center">
+                <div class="flex flex-col py-1">
+                    <label class="card-title" style="font-weight: 600;">Send me a message</label>
+                    <span class="text-sm font-normal card-content" >I can answer all of your questions 😊</span>
+                </div>
+                <mat-icon>
+                    send
+                </mat-icon>
+            </div>
+        </div>
+        <div class="w-80 h-18 p-4 rounded-lg shadow-md cursor-pointer" 
+            style="background-color: #fff;"
+            matRipple
+            (click)="onTabSelected.emit(2)"
+            *ngIf="expert && latestInvite">
+            <div class="flex flex-row py-1">
+                <label class="card-title" style="font-weight: 600;">Recent Requests</label>
+            </div>
+            <div class="flex flex-row items-center gap-2">
+                <img [src]="userImg" class=" rounded-full w-12 h-12  border-none shadow-md" />
+                <div class="flex flex-row justify-space-between w-full">
+                    <div class="flex flex-column items-start">
+                        <span class="text-sm font-normal card-content">{{latestInvite.created_by}} requested your Help</span>
+                        <span class="text-sm font-normal card-content" >{{latestInvite.created_at}}</span>
+                    </div>
+                    <mat-icon>
+                        keyboard_arrow_right
+                    </mat-icon>
+                </div>
+            </div>
+        </div>
+        <div class="w-80 h-18 p-4 rounded-lg shadow-md cursor-pointer" 
+            style="background-color: #fff;"
+            matRipple
+            (click)="onTabSelected.emit(1)"
+            *ngIf="latestSession">
+            <div class="flex flex-row py-1">
+                <label class="card-title" style="font-weight: 600;">Recent Sessions</label>
+            </div>
+            <div class="flex flex-row items-center gap-2">
+                <img [src]="latestSession.last_message_user_name == 'DoDo' ? LOGO : userImg" class=" rounded-full w-12 h-12  border-none shadow-md" />
+                <div class="flex flex-row justify-space-between w-full">
+                    <div class="flex flex-column items-start">
+                        <span class="text-sm font-normal card-content">{{latestSession.last_message_user_name}}: {{ latestSession.last_message_type != 'text' ? latestSession.last_message_type : (latestSession.last_message.length > 24) ? latestSession.last_message.substring(0,24) +  '...':latestSession.last_message}}</span>
+                        <span class="text-sm font-normal card-content" >{{latestSession.last_message_created_at}}</span>
+                    </div>
+                    <mat-icon>
+                        keyboard_arrow_right
+                    </mat-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

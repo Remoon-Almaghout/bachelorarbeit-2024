@@ -1,0 +1,89 @@
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-section {
+  margin: 0 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer {
+  
+  width: 100%;
+  border-bottom: 3px solid black; /* Dicke und Farbe der unteren Grenze festlegen */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hinzugefügte Box-Schatten für die Box-Effekt */
+  color: black;
+  background: BBE1FA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 20px;
+  flex-shrink: 0;
+  height: 100px;
+  
+}
+
+footer .top-part {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 0;
+}
+
+footer .top-part .nav {
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex: 1;
+}
+
+footer .top-part .nav .nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+footer .top-part .links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+}
+
+footer .bottom-part {
+  color: black;
+}

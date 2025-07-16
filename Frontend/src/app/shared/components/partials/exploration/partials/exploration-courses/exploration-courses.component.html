@@ -1,0 +1,13 @@
+<div class="flex items-center justify-space-between mb-4">
+  <h3 class="text-blue-900 mt-0">Courses</h3>
+  <p class="text-blue-900 mt-0 text-sm text-semi-bold">
+    Amount: {{ courses.length }}
+  </p>
+</div>
+<grid [cols]="3">
+  <course-card
+    [course]="course"
+    *ngFor="let course of courses"
+    (click)="onClick(course)"
+  ></course-card>
+</grid>

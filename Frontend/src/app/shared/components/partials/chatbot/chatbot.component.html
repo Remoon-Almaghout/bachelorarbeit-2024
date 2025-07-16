@@ -1,0 +1,31 @@
+<div  
+class="flex flex-column fixed z-10000"
+>
+    <chatbot-speech-menu
+    class=" fixed top-16 right-2"
+    (showHideSpeechMenu)="showHideSpeechMenu()"
+    *ngIf="speechMenuAppeared">
+    </chatbot-speech-menu>
+    <div class="flex flex-column fixed bottom-2 right-2">
+        <chatbot-main-menu
+        (onClose)="showChatBotMenu()"
+        (showHideSpeechMenu)="showHideSpeechMenu()"
+        [style.display]="chatBotMenuAppeared? 'block' : 'none'"
+        ></chatbot-main-menu>
+        <chatbot-notification-menu
+        (showHideNotification)="showHideNotification($event)"
+        [style.display]="notificationMenuAppeared? 'block' : 'none'">
+        </chatbot-notification-menu>
+        <div         
+        class="flex flex-row justify-end" >
+            <button 
+            color="bg-bot"
+            (click)="showChatBotMenu()"
+            mat-fab
+            >
+                <mat-icon>chat</mat-icon>
+            </button>
+        </div>
+    </div>
+
+</div>

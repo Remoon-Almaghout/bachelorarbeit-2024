@@ -1,0 +1,61 @@
+/* Stil für die Action Cards */
+.bg-white {
+    background-color: #ffffff;
+  }
+  
+  .border-blue-gray-300 {
+    border-color: #a0aec0;
+  }
+  
+  .text-dark-700 {
+    color: #2d3748;
+  }
+  
+  .action-card-selection {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .action-card-selection:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .action-card-selection-icon {
+    color: #4a5568;
+  }
+  
+  .action-card-selection-arrow {
+    background-color: #4a5568;
+  }
+  
+  /* Stil für die Start-Buttons */
+  .start-button,
+  .start-button1 {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #4299e1;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .start-button:hover,
+  .start-button1:hover {
+    background-color: #2c5282;
+  }
+  
+  .mt-16 {
+    position: relative;
+    z-index: 1000;
+  }
+  
+  footer {
+    position: relative; /* oder absolute, je nach Bedarf */
+    z-index: 999;
+  }
+  .grid-container{
+    width: 80%;
+    margin: auto;
+  }
